@@ -1,0 +1,15 @@
+[Unit]
+Description=DevOpsBlogApp
+After=network.target
+
+[Service]
+User=root
+WorkingDirectory=/root/DevOpsBlogSite/
+LimitNOFILE=4096
+ExecStart=/home/ec2-user/.local/share/pypoetry/venv/bin/poetry run gunicorn -b 0.0.0.0:80 main:app --workers 2 -k uvicorn.workers.UvicornWorker --error-logfile /root/DevOpsBlogSite/error_log.txt
+# --bind unix:DevOpsBlogApp.sock
+Restart=on-failure
+RestartSec=5s
+
+[Install]
+WantedBy=multi-user.target

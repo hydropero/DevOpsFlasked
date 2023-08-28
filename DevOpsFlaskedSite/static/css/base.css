@@ -1,0 +1,100 @@
+
+/* Style the navbar */
+
+body { 
+  padding-top: 65px;
+  background-color: #17a2b8;
+  display: flex;
+  flex-direction: column;
+  height: 100%; 
+}
+
+.lower{
+  padding-top: 25px; 
+}
+
+img {
+  display: block !important;
+  max-width:700px !important;
+  max-height:2000px !important;
+  width: auto !important;
+  height: auto !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  margin-top: 20px !important;
+  margin-bottom: 20px !important;
+}
+
+html{
+  height: 100% !important; 
+}
+
+.top_line {
+  border-top: 1px solid rgba(0,0,0,.125) !important;
+  margin-top: 10px;
+  padding-top: 12px;
+  font-size: smaller;
+}
+
+
+a:hover { text-decoration: none; }
+a:visited { text-decoration: none; }
+a:link { text-decoration: none; }
+a:active { text-decoration: none; }
+
+.content {
+  flex: 1 0 auto;
+}
+.footer {
+  flex-shrink: 0;
+}
+
+.category {
+  margin-top: 30px !important;
+  font-size: small;
+  color: blue !important;
+}
+.timedate {
+  font-size: small;
+  color: #17a2b8!
+}
+.basicname{
+  font-size: small;
+  color: #1b1b1b;
+}
+
+p {
+  margin-bottom: 0px !important;
+}
+
+.hover_invert:hover{
+  -webkit-transition: background-color .3s ease-out;
+  -moz-transition: background-color .3s ease-out;
+  -o-transition: background-color .3s ease-out;
+  transition: background-color .3s ease-out;
+  background-color: hsl(188, 78%, 41%) !important;
+  color: #1b1b1b !important;
+}
+
+
+
+.blue_out{
+  border: 1.5px solid #0d6efd !important;
+  border-radius: 0.5rem;
+}
+
+.header_styleless{
+  font-size: 175% !important;
+}
+
+.homepage_style{
+  color: rgba(33,37,41);
+  font-family: Arial,sans-serif !important;
+}
+
+.description {
+  font-size: 90%;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.175) !important;
+  margin-bottom: 30px !important;
+  margin-top: 20px !important;
+}

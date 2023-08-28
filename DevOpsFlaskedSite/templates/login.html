@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+{% block title %}Login{% endblock %}
+{% block head %}
+{{ super() }}
+{% endblock %}
+{% block content %}
+<br>
+<div class="container-sm">
+    <form method="POST">
+        <h3 align='center'>Login
+        </h3>
+        <div class="mb-3">
+            <label for="email">
+                Email
+            </label>
+            <input 
+            type="email" 
+            class="form-control" 
+            id='email' 
+            name="email" 
+            placeholder="Enter Email"
+            />
+        </div>
+        <div class="form-group">
+            <label for="password">
+                Password
+            </label>
+            <input 
+            type="password" 
+            class="form-control" 
+            id='password' 
+            name="password" 
+            placeholder="Enter Password"
+            />
+        </div>
+        <br>
+        <div class="text-center">
+        <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+    </form>
+    </div>
+{% endblock %}

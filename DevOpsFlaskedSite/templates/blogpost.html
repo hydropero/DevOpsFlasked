@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+{% block title %}Index{% endblock %}
+{% block head %}
+    {{ super() }}
+{% endblock %}
+{% block content %}
+    <div class="container-fluid">
+        <div class="container">
+            <div class="row">
+                <div class="col-12"><br></div>           
+                <div class="col-2"></div>
+                {% autoescape false %}
+                    <div class="col-8">
+                            <div class="card text-white bg-dark mb-3 blue_out">
+                                <div class="card-body">
+                                    <div class="card-header header_styleless">
+                                        {{ post_object.title_rendered}}
+                                    </div>
+                                    <br>
+                                    <div>
+                                    <span class="description">{{ post_object.description_rendered }} </span>
+                                    </div>
+                                    <div class="top_line" >
+                                        <span class="timedate">{{ post_object.date }}</span><br><span class="timedate">{{ post_object.category }}</span>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                {% endautoescape %}
+                <div class="col-2"></div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

@@ -1,0 +1,60 @@
+{% extends "base.html" %}
+{% block title %}Index{% endblock %}
+{% block head %}
+    {{ super() }}
+    <style type="text/css">
+        .important { color: #336699; }
+    </style>
+{% endblock %}
+{% block content %}
+<br>
+<br>
+<br>
+<br>
+    <div class="container-fluid">
+        <div class="container">
+            <div class="row">
+                <div class="col-12"><br></div>           
+                <div class="col-1"></div>
+                {% autoescape false %}
+                    <div class="col-10">
+                        <h2 class="homepage_style" style="font-size: 220%;">Self</h2>
+                        <p class="homepage_style">
+                            Hello, visitor! My name is Myles Bulla and I'm a DevOps/Infrastructure Engineer. While I love enjoying building and automating systems, I also have experience on the analytical end of the technical having served as an Data Analyst (briefly) and BI Developer. Outside of the professional realm I have an extensive homelab I tinker with constantly which currently includes:
+                            <ul>
+                            <li>Supermicro (Server)</li>
+                            <li>Cisco Catalyst 3550G 24-Port 10/100/1000 (Switch)</li>
+                            <li>Cisco ASA 5155-X 400Mbps (Firewall/VPN)</li>
+                            <li> Small Board Computers (SBCs)
+                                <ul>
+                                    <li>1x Raspberry Pi 2</li>
+                                    <li>1x Raspberry Pi 3</li>
+                                    <li>4x Libre Le Potato
+                                        <ul>
+                                            <li>Quad Core ARM Processor</li>
+                                            <li>2GB DDR3 RAM</li>
+                                            <li>Mali-450MP GPU</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </ul>
+                            A number of small software/scripting projects, a few of which could almost be considered  <em>complete</em> &copy;
+                        </p>
+                        <br>
+                        <p class="homepage_style">
+                            Outside of technology, I enjoy tennis/soccer, chess, video games, psychological drama <em>films</em>... and science fiction books.
+                        </p>
+                        <br>
+                        <br>
+                        <br>
+                        <p class="homepage_style">S3 Hosted - Visitor Count: {{ visitor_count }}</p> 
+                    </div>
+                {% endautoescape %}
+                <div class="col-1"></div>
+            </div>
+        </div>
+    </div>
+    {% autoescape false %}
+    {{ blogpost_model_selected }}
+    {% endautoescape %}
+{% endblock %}
