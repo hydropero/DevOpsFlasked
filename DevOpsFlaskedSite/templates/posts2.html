@@ -10,26 +10,8 @@
                 <div class="col-12"><br></div>           
                 <div class="col-2"></div>
                 {% autoescape false %}
-                    <div class="col-8">
-                        {% for blog_post in list_of_post_objects %}
-                        <a href="{{ url_for('read_post', post_id=blog_post.id) }}">
-                            <div class="card text-white bg-dark mb-3 hover_invert blue_out">
-                                <div class="card-body">
-                                    <div class="card-header header_styleless">
-                                        {{ blog_post.title_rendered}}
-                                    </div>
-                                    <br>
-                                    <div>
-                                    <span class="description">{{ blog_post.description_rendered }} </span>
-                                    </div>
-                                    <div class="top_line" >
-                                        <span class="timedate">{{ blog_post.date }}</span><br><span class="timedate">{{ blog_post.category }}</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>       
-                        {% endfor %}
-                    </div>
+                    Blog development in progress. Here's a picture of my homelab to tide you over till it's complete. 
+                    <img src="https://github.com/hydropero/DevOpsFlasked/blob/main/DevOpsFlaskedSite/static/images/temp_images/IMG_9CBD067A7898-1.jpeg?raw=true" alt="graphic design is my passion">
                 {% endautoescape %}
                 <div class="col-2"></div>
             </div>
