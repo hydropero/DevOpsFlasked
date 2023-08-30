@@ -18,8 +18,6 @@ DB_HOSTNAME = get_env_variable("POSTGRES_HOSTNAME")
 DB_USERNAME = get_env_variable("POSTGRES_USER")
 DB_PASSWORD = get_env_variable("POSTGRES_PW")
 DB_NAME = get_env_variable("POSTGRES_DB")
-AWS_ACCESS_KEY = get_env_variable("AWS_ACCESS_KEY")
-AWS_SECRET_KEY = get_env_variable("AWS_SECRET_KEY")
 
 DB_URL = f'postgresql+psycopg2://{DB_USERNAME}:{DB_PASSWORD}@{DB_HOSTNAME}/{DB_NAME}'
 
