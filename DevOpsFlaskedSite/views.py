@@ -1,14 +1,13 @@
 from flask import Blueprint, render_template
 from flask_login import login_required, current_user
 import io, csv, boto3
-from . import AWS_ACCESS_KEY, AWS_SECRET_KEY
 
 views = Blueprint('views', __name__)
 
 @views.route('/')
 def home():
     home_is_active = 'active'
-    s3_client = boto3.client('s3', aws_access_key=AWS_ACCESS_KEY, AWS_SECRET_KEY=AWS_SECRET_KEY)
+    s3_client = boto3.client('s3')
 
     s3_object = s3_client.get_object(Bucket="usercounter-devopsblogsite", Key="usercounter.txt")
     # read the file
