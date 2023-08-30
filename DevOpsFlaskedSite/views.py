@@ -20,9 +20,9 @@ def home():
     writer_buffer = io.StringIO(new_visitor_count)
     buffer_to_upload = io.BytesIO(writer_buffer.getvalue().encode())
     s3_client.put_object(Body=buffer_to_upload, Bucket='usercounter-devopsblogsite', Key='usercounter.txt')
-    return render_template("index.html", user=current_user, home_is_active=home_is_active, visitor_coun=str(visitor_count))
+    return render_template("index.html", user=current_user, home_is_active=home_is_active, visitor_count=str(visitor_count))
 
 @views.route('posts')
 def posts():
-    return render_template('posts2.html')
+    return render_template('index.html')
  
