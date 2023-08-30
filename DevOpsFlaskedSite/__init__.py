@@ -5,6 +5,7 @@ import os
 from sqlalchemy_utils import database_exists
 from flask_login import LoginManager
 
+
 def get_env_variable(name):
     try:
         return os.environ[name]
@@ -17,11 +18,14 @@ DB_HOSTNAME = get_env_variable("POSTGRES_HOSTNAME")
 DB_USERNAME = get_env_variable("POSTGRES_USER")
 DB_PASSWORD = get_env_variable("POSTGRES_PW")
 DB_NAME = get_env_variable("POSTGRES_DB")
+AWS_ACCESS_KEY = get_env_variable("AWS_ACCESS_KEY")
+AWS_SECRET_KEY = get_env_variable("AWS_SECRET_KEY")
+
 DB_URL = f'postgresql+psycopg2://{DB_USERNAME}:{DB_PASSWORD}@{DB_HOSTNAME}/{DB_NAME}'
 
 def create_app():
     app = Flask(__name__)
-    app.config['SECRET_KEY'] = 'lolololpopopoplolol'
+    app.config['SECRET_KEY'] = '#Tuypo85o^g3545V'
     app.config['SQLALCHEMY_DATABASE_URI'] = DB_URL 
     #app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False # silence the deprecation warning
     
@@ -47,8 +51,8 @@ def create_app():
     def load_user(id):
         return User.query.get(int(id))
     
-
     return app 
+
 def delete_database(app):
     with app.app_context():
         db.drop_all()
