@@ -6,4 +6,4 @@ blog = Blueprint("blog", __name__)
 
 @blog.route("/posts", methods=["GET"])
 def posts():
-    return render_template('posts2.html')
+    return render_template('test.html')

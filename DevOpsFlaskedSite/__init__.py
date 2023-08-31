@@ -34,6 +34,7 @@ def create_app():
 
     app.register_blueprint(views, url_prefix='/')
     app.register_blueprint(auth, url_prefix='/auth/')
+    app.register_blueprint(blog, url_prefix='/blog/')
     db.init_app(app)
     if database_exists(DB_URL):
         print('database already exists, will not recreate')
