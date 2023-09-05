@@ -12,13 +12,13 @@ def posts():
 
 @blog.route("/create-post", methods=["GET", "POST"])
 def create_post():
-
+    if request.method == "POST":
         post_title = request.form.get('post_title')
         post_content = request.form.get('post_content')
         post_tags = request.form.get('post_tags')
         post_author = 'Myles Bulla'
         post = Post.query.filter_by(post_title=post_title).first()
-
+        
         if post:
             flash('A post with this title already exists', category="error")
             return redirect(url_for('blog.create_post'))
@@ -38,5 +38,7 @@ def create_post():
         db.session.commit()
         flash("Post created!", category="success")
         return redirect(url_for("auth.create_post"))
+    else:
+        return render_template('create_post.html')
 
         
