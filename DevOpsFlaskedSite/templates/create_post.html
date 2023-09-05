@@ -7,20 +7,32 @@
 <br>
 <br>
 
+
+<!-- required fields
+
+    id (auto)
+    post_content
+    post_title
+    post_tags
+    post_author (auto)
+    create_date (auto)
+    update_date (auto)
+
+-->
 <div class="container-sm">
 <form method="POST">
-    <h3 align='center'>Sign Up
+    <h3 align='center'>Create Post
     </h3>
-    <div class="form-group">
-        <label for="email">
+    <div class="mb-3">
+        <label for="post_title">
             Email Address
         </label>
         <input 
-        type="email" 
+        type="text" 
         class="form-control" 
-        id='email' 
-        name="email" 
-        placeholder="Enter Email"
+        id='post_title' 
+        name="post_title" 
+        placeholder=""
         />
     </div>
     <div class="form-group">
