@@ -10,7 +10,7 @@ def posts():
     return render_template('test.html')
 
 
-@blog.route("/create-post", methods=["POST"])
+@blog.route("/create-post", methods=["GET", "POST"])
 def create_post():
 
         post_title = request.form.get('post_title')
