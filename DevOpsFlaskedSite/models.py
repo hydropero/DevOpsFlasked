@@ -1,8 +1,20 @@
 from . import db
 from flask_login import UserMixin
 from sqlalchemy.sql import func
+from dataclasses import dataclass
 
+@dataclass
 class Post(db.Model):
+    id: int
+    post_content: str
+    post_title: str
+    post_tags: str
+    post_subtitle: str
+    post_author: str
+    create_date: str
+    update_date: str
+    comments: str
+
     id =  db.Column(db.Integer, primary_key=True)
     post_content = db.Column(db.String(), unique=False)
     post_title = db.Column(db.String(200), unique=False)

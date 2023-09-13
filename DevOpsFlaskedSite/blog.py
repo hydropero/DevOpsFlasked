@@ -2,6 +2,7 @@ from flask import Blueprint, render_template, url_for, request, flash, redirect,
 from .models import Post
 import sqlalchemy
 from . import db
+from dataclasses import dataclass
 
 blog = Blueprint("blog", __name__)
 
@@ -9,9 +10,8 @@ blog = Blueprint("blog", __name__)
 @blog.route("/posts", methods=["GET"])
 def posts():
     posts = Post.query.filter(Post.id.between('1', '3')).all()
-    posts_schema = Post()
-    return jsonify(posts_schema.dump(posts))
-    return (str(list(posts)))
+    return jsonify(posts)
+
 
 @blog.route("/create-post", methods=["GET", "POST"])
 def create_post():
