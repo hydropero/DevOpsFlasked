@@ -14,6 +14,7 @@ def posts():
 def create_post():
     if request.method == "POST":
         post_title = request.form.get('post_title')
+        post_subtitle = request.form.get('post_subtitle')
         post_content = request.form.get('post_content')
         post_tags = request.form.get('post_tags')
         post_author = 'Myles Bulla'
@@ -26,9 +27,12 @@ def create_post():
             flash("Post title must be greater than 5 characters and less than 50", category="error")
         elif len(post_content) < 1:
             flash("Post must contain some content!", category="error")
+        elif len(post_subtitle) < 1 or len(post_subtitle) > 50:
+             flash("Post must contain some content!", category="error")
         else:
             new_post = Post(
                 post_content=post_content,
+                post_subtitle=post_subtitle,
                 post_title = post_title,
                 post_tags = post_tags,
                 post_author = post_author,
@@ -37,7 +41,7 @@ def create_post():
         db.session.add(new_post)
         db.session.commit()
         flash("Post created!", category="success")
-        return redirect(url_for("auth.create_post"))
+        return redirect(url_for("blog.create_post"))
     else:
         return render_template('create_post.html')
 
