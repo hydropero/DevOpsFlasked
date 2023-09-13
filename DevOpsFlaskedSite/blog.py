@@ -13,7 +13,7 @@ def posts():
     for row in posts:
         test.append(row)
         print(row)
-    return (str(test[0]))
+    return (str(list(posts)))
 
 @blog.route("/create-post", methods=["GET", "POST"])
 def create_post():
