@@ -11,7 +11,7 @@ def posts():
 
     posts = Post.query.filter(Post.order_date.between('1', '3'))
     print(posts)
-    return render_template('test.html')
+    return posts
 
 @blog.route("/create-post", methods=["GET", "POST"])
 def create_post():
