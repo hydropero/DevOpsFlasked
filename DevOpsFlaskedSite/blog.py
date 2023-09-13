@@ -8,8 +8,7 @@ blog = Blueprint("blog", __name__)
 
 @blog.route("/posts", methods=["GET"])
 def posts():
-
-    posts = Post.query.filter(Post.order_date.between('1', '3'))
+    posts = Post.query.filter(Post.id.between('1', '3'))
     print(posts)
     return posts
 
