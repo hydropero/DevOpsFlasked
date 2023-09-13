@@ -9,7 +9,7 @@ blog = Blueprint("blog", __name__)
 @blog.route("/posts", methods=["GET"])
 def posts():
     posts = Post.query.filter(Post.id.between('1', '3')).all()
-    posts_schema = Post(many=True)
+    posts_schema = Post()
     return jsonify(posts_schema.dump(posts))
     return (str(list(posts)))
 
