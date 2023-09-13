@@ -10,7 +10,10 @@ blog = Blueprint("blog", __name__)
 @blog.route("/posts", methods=["GET"])
 def posts():
     posts = Post.query.filter(Post.id.between('1', '3')).all()
-    return jsonify(posts)
+    dicts = []
+    for post in posts:
+        dicts.append(post.__dict__)
+    return str(dicts)
 
 
 @blog.route("/create-post", methods=["GET", "POST"])
