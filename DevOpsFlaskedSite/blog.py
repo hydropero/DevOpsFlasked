@@ -9,8 +9,11 @@ blog = Blueprint("blog", __name__)
 @blog.route("/posts", methods=["GET"])
 def posts():
     posts = Post.query.filter(Post.id.between('1', '3'))
-    
-    return list(posts)
+    test = []
+    for row in posts:
+        test.append(row)
+        print(row)
+    return (test)
 
 @blog.route("/create-post", methods=["GET", "POST"])
 def create_post():
