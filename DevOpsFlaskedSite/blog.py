@@ -9,8 +9,8 @@ blog = Blueprint("blog", __name__)
 @blog.route("/posts", methods=["GET"])
 def posts():
     posts = Post.query.filter(Post.id.between('1', '3'))
-    print(posts)
-    return posts
+    
+    return posts.__dict__
 
 @blog.route("/create-post", methods=["GET", "POST"])
 def create_post():
