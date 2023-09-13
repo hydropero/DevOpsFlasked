@@ -1,5 +1,6 @@
 from flask import Blueprint, render_template, url_for, request, flash, redirect
 from .models import Post
+import sqlalchemy
 from . import db
 
 blog = Blueprint("blog", __name__)
@@ -7,8 +8,10 @@ blog = Blueprint("blog", __name__)
 
 @blog.route("/posts", methods=["GET"])
 def posts():
-    return render_template('test.html')
 
+    posts = Post.query.filter(Post.order_date.between('1', '3'))
+    print(posts)
+    return render_template('test.html')
 
 @blog.route("/create-post", methods=["GET", "POST"])
 def create_post():
