@@ -37,11 +37,10 @@ def create_post():
                 post_tags = post_tags,
                 post_author = post_author,
             )
-
-        db.session.add(new_post)
-        db.session.commit()
-        flash("Post created!", category="success")
-        return redirect(url_for("blog.create_post"))
+            db.session.add(new_post)
+            db.session.commit()
+            flash("Post created!", category="success")
+            return redirect(url_for("blog.create_post"))
     else:
         return render_template('create_post.html')
 
