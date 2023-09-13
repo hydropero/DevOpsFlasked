@@ -1,4 +1,4 @@
-from flask import Blueprint, render_template, url_for, request, flash, redirect
+from flask import Blueprint, render_template, url_for, request, flash, redirect, jsonify
 from .models import Post
 import sqlalchemy
 from . import db
@@ -8,11 +8,9 @@ blog = Blueprint("blog", __name__)
 
 @blog.route("/posts", methods=["GET"])
 def posts():
-    posts = Post.query.filter(Post.id.between('1', '3'))
-    test = []
-    for row in posts:
-        test.append(row)
-        print(row)
+    posts = Post.query.filter(Post.id.between('1', '3')).all()
+    posts_schema = Post(many=True)
+    return jsonify(posts_schema.dump(posts))
     return (str(list(posts)))
 
 @blog.route("/create-post", methods=["GET", "POST"])
