@@ -2,7 +2,7 @@ from flask import Blueprint, render_template, url_for, request, flash, redirect,
 from .models import Post
 import sqlalchemy
 from . import db
-from dataclasses import dataclass
+import simplejson
 
 blog = Blueprint("blog", __name__)
 
@@ -11,9 +11,9 @@ blog = Blueprint("blog", __name__)
 def posts():
     posts = Post.query.filter(Post.id.between('1', '3')).all()
     dicts = []
-    for post in posts:
-        dicts.append(post.__dict__)
-    return str(dicts)
+    response = simplejson.dumps(posts)
+    
+    return str(response)
 
 
 @blog.route("/create-post", methods=["GET", "POST"])
