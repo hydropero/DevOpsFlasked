@@ -1,9 +1,13 @@
 from . import db
 from flask_login import UserMixin
 from sqlalchemy.sql import func
+import sqlalchemy_mixins as sql_mix
 
+class BaseModel(db.Model, sql_mix.AllFeaturesMixin):
+    __abstract__ = True
+    pass
 
-class Post(db.Model):
+class Post(BaseModel):
     id =  db.Column(db.Integer, primary_key=True)
     post_content = db.Column(db.String(), unique=False)
     post_title = db.Column(db.String(200), unique=False)
@@ -15,7 +19,7 @@ class Post(db.Model):
     comments = db.relationship('Comment')
 
 
-class User(db.Model, UserMixin):
+class User(BaseModel):
     id =  db.Column(db.Integer, primary_key=True)
     email = db.Column(db.String(150), unique=True)
     password = db.Column(db.String(150))
@@ -23,7 +27,7 @@ class User(db.Model, UserMixin):
     comments = db.relationship('Comment')
 
 
-class Comment(db.Model):
+class Comment(BaseModel):
     id =  db.Column(db.Integer, primary_key=True)
     comment_content = db.Column(db.String(600), unique=False)
     create_date = db.Column(db.DateTime(timezone=True), server_default=func.now())
