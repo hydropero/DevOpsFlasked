@@ -15,7 +15,7 @@ def posts():
     print(posts)
    
     for post in posts:
-        print(dict(post))
+        print(post.__dict__)
     
     return str(post_type)
 
