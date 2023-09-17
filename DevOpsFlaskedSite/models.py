@@ -20,6 +20,7 @@ class Post(BaseModel):
 
 
 class User(BaseModel):
+    __repr_attrs__ = ['id', 'email', 'password', 'first_name']
     id =  db.Column(db.Integer, primary_key=True)
     email = db.Column(db.String(150), unique=True)
     password = db.Column(db.String(150))
