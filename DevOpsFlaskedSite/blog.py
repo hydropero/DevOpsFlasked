@@ -11,14 +11,9 @@ blog = Blueprint("blog", __name__)
 def posts():
     posts = Post.query.filter(Post.id.between('1', '3')).all()
     post_type = type(posts)
+    print(post_type)
     print(posts)
-    user = User.all()
-
-  
-    
-
-    dicts = []
-    response = dict
+   
     
     return str(post_type)
 
