@@ -19,12 +19,12 @@ def posts():
     post_type = type(posts)
     print(post_type)
     print(posts)
-   
+    
     for post in posts:
         row2dict(post)
         
     
-    return str(post_type)
+    return 'l'
 
 
 @blog.route("/create-post", methods=["GET", "POST"])
