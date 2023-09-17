@@ -14,6 +14,8 @@ def posts():
     print(post_type)
     print(posts)
    
+    for post in posts:
+        print(type(post))
     
     return str(post_type)
 
