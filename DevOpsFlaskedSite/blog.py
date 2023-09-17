@@ -20,7 +20,7 @@ def posts():
     dicts = []
     response = dict
     
-    return post_type
+    return str(post_type)
 
 
 @blog.route("/create-post", methods=["GET", "POST"])
