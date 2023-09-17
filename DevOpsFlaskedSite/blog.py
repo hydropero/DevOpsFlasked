@@ -21,7 +21,7 @@ def posts():
     print(posts)
     
     for post in posts:
-        row2dict(post)
+        print(row2dict(post))
         
     
     return 'l'
