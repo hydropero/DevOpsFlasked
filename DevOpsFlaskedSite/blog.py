@@ -13,7 +13,7 @@ def posts():
     print(posts)
     user = User.query.all()
 
-    
+    print(user)
     
 
     dicts = []
