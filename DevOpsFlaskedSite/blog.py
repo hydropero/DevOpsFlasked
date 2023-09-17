@@ -1,5 +1,5 @@
 from flask import Blueprint, render_template, url_for, request, flash, redirect, jsonify
-from .models import Post
+from .models import Post, User
 import sqlalchemy
 from . import db
 import simplejson
@@ -11,13 +11,15 @@ blog = Blueprint("blog", __name__)
 def posts():
     posts = Post.query.filter(Post.id.between('1', '3')).all()
     print(posts)
+    user = User.query.all()
+
     
     
 
     dicts = []
     response = dict
     
-    return str(posts)
+    return str(user)
 
 
 @blog.route("/create-post", methods=["GET", "POST"])
