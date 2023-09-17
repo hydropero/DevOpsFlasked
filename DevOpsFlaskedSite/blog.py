@@ -11,7 +11,7 @@ blog = Blueprint("blog", __name__)
 def posts():
     posts = Post.query.filter(Post.id.between('1', '3')).all()
     print(posts)
-    user = User.query.all()
+    user = User.all()
 
     print(user)
     
