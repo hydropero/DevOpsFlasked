@@ -10,7 +10,7 @@ blog = Blueprint("blog", __name__)
 @blog.route("/posts", methods=["GET"])
 def posts():
     posts = Post.query.filter(Post.id.between('1', '3')).all()
-    print(type(posts))
+    post_type = type(posts)
     print(posts)
     user = User.all()
 
@@ -20,7 +20,7 @@ def posts():
     dicts = []
     response = dict
     
-    return str(user)
+    return post_type
 
 
 @blog.route("/create-post", methods=["GET", "POST"])
