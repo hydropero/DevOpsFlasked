@@ -6,6 +6,12 @@ import simplejson
 
 blog = Blueprint("blog", __name__)
 
+def row2dict(row):
+    d = {}
+    for column in row.__table__.columns:
+        d[column.name] = str(getattr(row, column.name))
+
+    return d
 
 @blog.route("/posts", methods=["GET"])
 def posts():
@@ -15,7 +21,8 @@ def posts():
     print(posts)
    
     for post in posts:
-        print(post.__dict__)
+        row2dict(post)
+        
     
     return str(post_type)
 
