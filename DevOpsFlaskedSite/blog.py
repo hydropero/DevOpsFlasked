@@ -16,15 +16,12 @@ def row2dict(row):
 @blog.route("/posts", methods=["GET"])
 def posts():
     posts = Post.query.filter(Post.id.between('1', '3')).all()
-    post_type = type(posts)
-    print(post_type)
-    print(posts)
+    list_of_posts = []
     
     for post in posts:
-        print(row2dict(post))
-        
+        list_of_posts.append(row2dict(post))
     
-    return 'l'
+    return render_template('posts.html', list_of_posts)
 
 
 @blog.route("/create-post", methods=["GET", "POST"])
