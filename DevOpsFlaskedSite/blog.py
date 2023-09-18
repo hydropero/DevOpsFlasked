@@ -15,11 +15,9 @@ def row2dict(row):
 
 @blog.route("/posts", methods=["GET"])
 def posts():
-    posts = Post.query.filter(Post.id.between('1', '3')).all()
+    posts = db.session.execute("SELECT * FROM formatted_post")
     list_of_posts = []
-    
-    for post in posts:
-        list_of_posts.append(row2dict(post))
+    [list_of_posts.append(row2dict(post)) for post in posts]
     
     return render_template('posts.html', list_of_posts=list_of_posts)
 
