@@ -1,6 +1,6 @@
 from flask import Blueprint, render_template, url_for, request, flash, redirect, jsonify
 from .models import Post, User
-import sqlalchemy
+import sqlalchemy as sqla
 from . import db
 import simplejson
 
@@ -15,7 +15,7 @@ def row2dict(row):
 
 @blog.route("/posts", methods=["GET"])
 def posts():
-    posts = db.session.execute("SELECT * FROM formatted_post")
+    posts = db.session.execute(sqla.text("SELECT * FROM formatted_post"))
     list_of_posts = []
     [list_of_posts.append(row2dict(post)) for post in posts]
     
