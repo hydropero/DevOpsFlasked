@@ -8,15 +8,16 @@ blog = Blueprint("blog", __name__)
 
 def row2dict(row):
     d = {}
-    for column in row.__view__.columns:
+    for column in row.__table__.columns:
         d[column.name] = str(getattr(row, column.name))
 
     return d
 
 @blog.route("/posts", methods=["GET"])
 def posts():
-    posts = db.session.execute(sqla.text("SELECT * FROM formatted_post"))
+    posts = db.session.execute(sqla.text("SELECT * FROM formatted_post")).__dict__
     list_of_posts = []
+    return str(posts)
     [list_of_posts.append(row2dict(post)) for post in posts]
     
     return render_template('posts.html', list_of_posts=list_of_posts)
