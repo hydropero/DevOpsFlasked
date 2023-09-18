@@ -8,7 +8,7 @@ blog = Blueprint("blog", __name__)
 
 def row2dict(row):
     d = {}
-    for column in row.__table__.columns:
+    for column in row.__view__.columns:
         d[column.name] = str(getattr(row, column.name))
 
     return d
