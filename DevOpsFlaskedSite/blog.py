@@ -17,6 +17,8 @@ def row2dict(row):
 def posts():
     posts = db.session.execute(sqla.text("SELECT * FROM formatted_post"))
     list_of_posts = []
+    posts = posts.mappings().all()
+    
     print(posts)
     return str(posts)
     [list_of_posts.append(row2dict(post)) for post in posts]
