@@ -30,7 +30,7 @@ def posts():
 @blog.route("/blogpost", methods=["GET"])
 def blogpost():
     post_id = int(request.args.get('post_id'))
-    post = dict(db.session.execute(sqla.text(f"SELECT * FROM formatted_post WHERE id = {post_id}")))
+    post = dict(db.session.execute(sqla.text(f"SELECT * FROM formatted_post WHERE id = {post_id}").mappings.all()))
 
     post.update((k, markdown.markdown(v)) for k, v in post.items() if k == "post_content")
     return render_template('blogpost.html', post)
