@@ -17,11 +17,12 @@ def row2dict(row):
 @blog.route("/posts", methods=["GET"])
 def posts():
     posts = db.session.execute(sqla.text("SELECT * FROM formatted_post"))
-    list_of_posts = []
+    list_of_dict_posts = []
     list_of_posts = posts.mappings().all()
-    for item in list_of_posts:
-        print(type(item))
     for post in list_of_posts:
+        list_of_dict_posts.append(post.__dict__)
+
+    for post in list_of_dict_posts:
         post.update((k, markdown.markdown(v)) for k, v in post.items() if k == "post_content")
 
     
