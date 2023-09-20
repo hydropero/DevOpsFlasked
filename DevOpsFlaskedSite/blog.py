@@ -29,7 +29,7 @@ def posts():
         
     
 
-    return render_template('posts.html', list_of_dict_posts_marked=list_of_dict_posts)
+    return render_template('posts.html', list_of_dict_posts=list_of_dict_posts)
 
 
 @blog.route("/create-post", methods=["GET", "POST"])
