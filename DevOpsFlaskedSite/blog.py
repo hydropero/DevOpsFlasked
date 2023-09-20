@@ -28,7 +28,7 @@ def posts():
         list_of_dict_posts_marked.append(post)
     
 
-    return render_template('posts.html', list_of_dict_posts=list_of_dict_posts_marked)
+    return render_template('posts.html', list_of_dict_posts_marked=list_of_dict_posts_marked)
 
 
 @blog.route("/create-post", methods=["GET", "POST"])
