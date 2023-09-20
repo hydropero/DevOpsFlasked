@@ -20,7 +20,7 @@ def posts():
     list_of_posts = []
     list_of_posts = posts.mappings().all()
     for item in list_of_posts:
-        print(item)
+        print(type(item))
     for post in list_of_posts:
         post.update((k, markdown.markdown(v)) for k, v in post.items() if k == "post_content")
 
