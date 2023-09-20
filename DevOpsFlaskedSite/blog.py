@@ -31,14 +31,10 @@ def posts():
 def blogpost():
     post_id = int(request.args.get('post_id'))
     post = db.session.execute(sqla.text(f"SELECT * FROM formatted_post WHERE id = {post_id}"))
+    print(f'{type(post.mappings())}')
+    print(f'{type(post.mappings().all())}')
     post_deserialized = dict(post.mappings().all())
-    print(post_deserialized)
-    print(post_deserialized)
-    print(post_deserialized)
-    print(post_deserialized)
-    print(post_deserialized)
-    print(post_deserialized)
-    #post_deserialized.update((k, markdown.markdown(v)) for k, v in post.items() if k == "post_content")
+    post_deserialized.update((k, markdown.markdown(v)) for k, v in post.items() if k == "post_content")
     return render_template('blogpost.html', post=post_deserialized)
 
 
