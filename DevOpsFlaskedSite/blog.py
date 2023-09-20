@@ -24,8 +24,13 @@ def posts():
 
     for post in list_of_dict_posts:
         post.update((k, markdown.markdown(v)) for k, v in post.items() if k == "post_content")
-
-    
+    raw_markdowned = '''
+    - p
+    - t
+    - b
+    '''
+    marked = markdown.markdown(raw_markdowned)
+    return marked
     return render_template('posts.html', list_of_posts=list_of_dict_posts)
 
 
