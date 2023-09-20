@@ -33,6 +33,11 @@ def blogpost():
     post = db.session.execute(sqla.text(f"SELECT * FROM formatted_post WHERE id = {post_id}"))
     post_deserialized = dict(post.mappings().all())
     print(post_deserialized)
+    print(post_deserialized)
+    print(post_deserialized)
+    print(post_deserialized)
+    print(post_deserialized)
+    print(post_deserialized)
     #post_deserialized.update((k, markdown.markdown(v)) for k, v in post.items() if k == "post_content")
     return render_template('blogpost.html', post=post_deserialized)
 
