@@ -24,19 +24,10 @@ def posts():
 
     for post in list_of_dict_posts:
         post.update((k, markdown.markdown(v)) for k, v in post.items() if k == "post_content")
-    raw_markdowned = '''
-    - p
-    - t
-    - b
-    # ok
-    '''
-    marked = markdown.markdown(raw_markdowned)
-    print(marked)
-    print(marked)
-    print(marked)
-    return marked
+        print(post)
+    
 
-    return render_template('posts.html', list_of_posts=list_of_dict_posts)
+    return render_template('posts.html', list_of_dict_posts=list_of_dict_posts)
 
 
 @blog.route("/create-post", methods=["GET", "POST"])
