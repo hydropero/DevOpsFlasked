@@ -26,7 +26,7 @@ def posts():
         post.update((k, markdown.markdown(v)) for k, v in post.items() if k == "post_content")
 
     
-    return render_template('posts.html', list_of_posts=list_of_posts)
+    return render_template('posts.html', list_of_posts=list_of_dict_posts)
 
 
 @blog.route("/create-post", methods=["GET", "POST"])
