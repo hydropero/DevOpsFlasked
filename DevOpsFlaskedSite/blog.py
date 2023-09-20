@@ -31,7 +31,11 @@ def posts():
     # ok
     '''
     marked = markdown.markdown(raw_markdowned)
+    print(marked)
+    print(marked)
+    print(marked)
     return marked
+
     return render_template('posts.html', list_of_posts=list_of_dict_posts)
 
 
