@@ -20,7 +20,7 @@ def posts():
     list_of_dict_posts = []
     list_of_posts = posts.mappings().all()
     for post in list_of_posts:
-        list_of_dict_posts.append(post.__dict__)
+        list_of_dict_posts.append(dict(post))
 
     for post in list_of_dict_posts:
         post.update((k, markdown.markdown(v)) for k, v in post.items() if k == "post_content")
