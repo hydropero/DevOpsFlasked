@@ -18,8 +18,10 @@ def row2dict(row):
 def posts():
     posts = db.session.execute(sqla.text("SELECT * FROM formatted_post"))
     list_of_posts = []
-    list_of_posts = dict(posts.mappings().all())
-
+    list_of_posts = posts.mappings().all()
+    print(type(list_of_posts))
+    print(type(list_of_posts))
+    print(type(list_of_posts))
     for post in list_of_posts:
         post.update((k, markdown.markdown(v)) for k, v in post.items() if k == "post_content")
 
