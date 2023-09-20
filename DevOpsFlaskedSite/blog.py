@@ -3,6 +3,7 @@ from .models import Post, User
 import sqlalchemy as sqla
 from . import db
 import simplejson
+import markdown
 
 blog = Blueprint("blog", __name__)
 
@@ -18,7 +19,8 @@ def posts():
     posts = db.session.execute(sqla.text("SELECT * FROM formatted_post"))
     list_of_posts = []
     list_of_posts = posts.mappings().all()
-    
+    for post in list_of_posts:
+        post.update((k, markdown.markdown(v)) for k, v in post.items() if k == "post_content")
     
 
     
