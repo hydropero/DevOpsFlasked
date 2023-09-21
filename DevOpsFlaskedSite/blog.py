@@ -28,7 +28,7 @@ def posts():
     return render_template('posts.html', list_of_dict_posts=list_of_dict_posts)
 
 @blog.route("/blogpost/<post_id>", methods=["GET"])
-def blogpost(post_id):
+def blog_post(post_id):
     return post_id
     post_id = int(request.args.get('post_id'))
     post = db.session.execute(sqla.text(f"SELECT * FROM formatted_post WHERE id = {post_id}"))
