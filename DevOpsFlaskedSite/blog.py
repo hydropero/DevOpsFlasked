@@ -29,7 +29,6 @@ def posts():
 
 @blog.route("/blog_post/<int:post_id>", methods=["GET"])
 def blog_post(post_id):
-    post_id = int(request.args.get('post_id'))
     post = db.session.execute(sqla.text(f"SELECT * FROM formatted_post WHERE id = {post_id}"))
     post_deserialized = dict(post.mappings().all()[0])
     print(post_deserialized)
