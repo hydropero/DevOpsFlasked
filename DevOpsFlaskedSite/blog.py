@@ -27,9 +27,8 @@ def posts():
 
     return render_template('posts.html', list_of_dict_posts=list_of_dict_posts)
 
-@blog.route("/blogpost/<int:post_id>", methods=["GET"])
+@blog.route("/blogpost/<post_id>", methods=["GET"])
 def blogpost():
-
     post_id = int(request.args.get('post_id'))
     post = db.session.execute(sqla.text(f"SELECT * FROM formatted_post WHERE id = {post_id}"))
     post_deserialized = dict(post.mappings().all()[0])
