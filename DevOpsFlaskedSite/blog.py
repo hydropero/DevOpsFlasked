@@ -57,17 +57,21 @@ def create_post():
         elif len(post_subtitle) < 1 or len(post_subtitle) > 50:
              flash("Post must contain some content!", category="error")
         else:
-            new_post = Post(
-                post_content=post_content,
-                post_subtitle=post_subtitle,
-                post_title = post_title,
-                post_tags = post_tags,
-                post_author = post_author,
-            )
-            db.session.add(new_post)
-            db.session.commit()
-            flash("Post created!", category="success")
-            return redirect(url_for("blog.create_post"))
+            try:
+                new_post = Post(
+                    post_content=post_content,
+                    post_subtitle=post_subtitle,
+                    post_title = post_title,
+                    post_tags = post_tags,
+                    post_author = post_author,
+                )
+                db.session.add(new_post)
+                db.session.commit()
+                flash("Post created!", category="success")
+                return redirect(url_for("blog.create_post"))
+            except BaseException as e:
+                print(e)
+                return str(e)
     else:
         return render_template('create_post.html')
 
