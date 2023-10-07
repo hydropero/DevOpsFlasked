@@ -40,22 +40,26 @@ def blog_post(post_id):
 @blog.route("/create-post", methods=["GET", "POST"])
 def create_post():
     if request.method == "POST":
-        post_title = request.form.get('post_title')
-        post_subtitle = request.form.get('post_subtitle')
-        post_content = request.form.get('post_content')
-        post_tags = request.form.get('post_tags')
-        post_author = 'Myles Bulla'
-        post = Post.query.filter_by(post_title=post_title).first()
-        
-        if post:
-            flash('A post with this title already exists', category="error")
-            return redirect(url_for('blog.create_post'))
-        if len(post_title) < 5 or len(post_title) > 50:
-            flash("Post title must be greater than 5 characters and less than 50", category="error")
-        elif len(post_content) < 1:
-            flash("Post must contain some content!", category="error")
-        elif len(post_subtitle) < 1 or len(post_subtitle) > 50:
-             flash("Post must contain some content!", category="error")
+        try:
+            post_title = request.form.get('post_title')
+            post_subtitle = request.form.get('post_subtitle')
+            post_content = request.form.get('post_content')
+            post_tags = request.form.get('post_tags')
+            post_author = 'Myles Bulla'
+            post = Post.query.filter_by(post_title=post_title).first()
+            
+            if post:
+                flash('A post with this title already exists', category="error")
+                return redirect(url_for('blog.create_post'))
+            if len(post_title) < 5 or len(post_title) > 50:
+                flash("Post title must be greater than 5 characters and less than 50", category="error")
+            elif len(post_content) < 1:
+                flash("Post must contain some content!", category="error")
+            elif len(post_subtitle) < 1 or len(post_subtitle) > 50:
+                flash("Post must contain some content!", category="error")
+        except BaseException as e:
+                print(e)
+                return str(e)
         else:
             try:
                 new_post = Post(
