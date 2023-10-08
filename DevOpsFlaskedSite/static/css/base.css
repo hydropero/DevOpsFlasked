@@ -64,7 +64,7 @@ a:active { text-decoration: none; }
 }
 
 p {
-  margin-bottom: 0px !important;
+  margin-bottom: 10px !important;
 }
 
 .hover_invert:hover{
