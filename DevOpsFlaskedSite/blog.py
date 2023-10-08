@@ -33,7 +33,7 @@ def blog_post(post_id):
     post_deserialized = dict(post.mappings().all()[0])
     print(post_deserialized)
     print(type(post_deserialized))
-    post_deserialized.update((k, markdown.markdown(v, extensions=['nl2br'])) for k, v in post_deserialized.items() if k == "post_content")
+    post_deserialized.update((k, markdown.markdown(v, extensions=['nl2br', 'extra'])) for k, v in post_deserialized.items() if k == "post_content")
     return render_template('blogpost.html', post=post_deserialized)
 
 
