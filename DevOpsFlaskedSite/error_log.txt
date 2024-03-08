@@ -1,0 +1,32 @@
+[2024-03-08 18:19:50 +0000] [894474] [INFO] Starting gunicorn 20.1.0
+[2024-03-08 18:19:50 +0000] [894474] [INFO] Listening at: unix:/run/gunicorn.sock (894474)
+[2024-03-08 18:19:50 +0000] [894474] [INFO] Using worker: sync
+[2024-03-08 18:19:50 +0000] [894479] [INFO] Booting worker with pid: 894479
+[2024-03-08 18:19:50 +0000] [894480] [INFO] Booting worker with pid: 894480
+[2024-03-08 18:19:50 +0000] [894481] [INFO] Booting worker with pid: 894481
+[2024-03-08 18:20:39,004] ERROR in app: Exception on /blog/blog_post/2 [GET]
+Traceback (most recent call last):
+  File "/root/.cache/pypoetry/virtualenvs/devopsblogapp-toCHNqgA-py3.9/lib/python3.9/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/root/.cache/pypoetry/virtualenvs/devopsblogapp-toCHNqgA-py3.9/lib/python3.9/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/root/.cache/pypoetry/virtualenvs/devopsblogapp-toCHNqgA-py3.9/lib/python3.9/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/root/.cache/pypoetry/virtualenvs/devopsblogapp-toCHNqgA-py3.9/lib/python3.9/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/ec2-user/DevOpsFlasked/DevOpsFlaskedSite/blog.py", line 42, in blog_post
+    processed_post = post_deserialized.replace("![](", "![](/images/_resources/")
+AttributeError: 'dict' object has no attribute 'replace'
+[2024-03-08 18:20:59,194] ERROR in app: Exception on /blog/blog_post/2 [GET]
+Traceback (most recent call last):
+  File "/root/.cache/pypoetry/virtualenvs/devopsblogapp-toCHNqgA-py3.9/lib/python3.9/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/root/.cache/pypoetry/virtualenvs/devopsblogapp-toCHNqgA-py3.9/lib/python3.9/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/root/.cache/pypoetry/virtualenvs/devopsblogapp-toCHNqgA-py3.9/lib/python3.9/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/root/.cache/pypoetry/virtualenvs/devopsblogapp-toCHNqgA-py3.9/lib/python3.9/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/ec2-user/DevOpsFlasked/DevOpsFlaskedSite/blog.py", line 42, in blog_post
+    processed_post = post_deserialized.replace("![](", "![](/images/_resources/")
+AttributeError: 'dict' object has no attribute 'replace'
