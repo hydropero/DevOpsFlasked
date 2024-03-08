@@ -36,13 +36,15 @@ def blog_post(post_id):
     print(type(post_deserialized))
     post_deserialized.update((k, markdown.markdown(v)) for k, v in post_deserialized.items() if k == "post_content")
     # this is to replace existing image links dynamically for ease
-    
+    post_content_test = post_deserialized["post_content"]
     if "https://mylesdomain.com/images/" in post_deserialized["post_content"]:
-        post_deserialized["post_content"] = re.sub("/!\[.*\]\(", "![](", post_deserialized["post_content"])
+        post_deserialized["post_content"] = re.sub("!\[.*\]\(", "![](", post_deserialized["post_content"])
+        post_content_test = re.sub("!\[.*\]\(", "![](", post_deserialized["post_content"])
         # this is to ensure the variable exists regardless of whether the if statement executes
     post_deserialized["post_content"] = re.sub("!\[.*\]\(", "![](/images/_resources/", post_deserialized["post_content"])
-
-    return render_template('blogpost.html', post=post_deserialized)
+    post_content_test = re.sub("!\[.*\]\(", "![](/images/_resources/", post_deserialized["post_content"])
+    
+    return render_template('blogpost.html', post=post_deserialized, post_content_test=post_content_test)
 
 
 @blog.route("/create-post", methods=["GET", "POST"])
