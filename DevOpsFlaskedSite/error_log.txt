@@ -81,3 +81,15 @@ Traceback (most recent call last):
   File "/home/ec2-user/DevOpsFlasked/DevOpsFlaskedSite/blog.py", line 41, in blog_post
     post_deserialized["post_content"] = re.sub("/!\[.*\]\(", "![](", post_deserialize["post_content"])
 NameError: name 'post_deserialize' is not defined
+[2024-03-08 18:29:33 +0000] [894922] [INFO] Handling signal: term
+[2024-03-08 18:29:33 +0000] [894927] [INFO] Worker exiting (pid: 894927)
+[2024-03-08 18:29:33 +0000] [894928] [INFO] Worker exiting (pid: 894928)
+[2024-03-08 18:29:33 +0000] [894929] [INFO] Worker exiting (pid: 894929)
+[2024-03-08 18:29:33 +0000] [894922] [WARNING] Worker with pid 894927 was terminated due to signal 15
+[2024-03-08 18:29:33 +0000] [894922] [INFO] Shutting down: Master
+[2024-03-08 18:29:39 +0000] [895038] [INFO] Starting gunicorn 20.1.0
+[2024-03-08 18:29:39 +0000] [895038] [INFO] Listening at: unix:/run/gunicorn.sock (895038)
+[2024-03-08 18:29:39 +0000] [895038] [INFO] Using worker: sync
+[2024-03-08 18:29:39 +0000] [895043] [INFO] Booting worker with pid: 895043
+[2024-03-08 18:29:39 +0000] [895044] [INFO] Booting worker with pid: 895044
+[2024-03-08 18:29:39 +0000] [895045] [INFO] Booting worker with pid: 895045
