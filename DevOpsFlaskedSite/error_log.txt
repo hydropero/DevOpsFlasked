@@ -1,0 +1,259 @@
+[2023-10-07 18:17:34 +0000] [1591661] [INFO] Starting gunicorn 20.1.0
+[2023-10-07 18:17:34 +0000] [1591661] [INFO] Listening at: unix:/run/gunicorn.sock (1591661)
+[2023-10-07 18:17:34 +0000] [1591661] [INFO] Using worker: sync
+[2023-10-07 18:17:34 +0000] [1591664] [INFO] Booting worker with pid: 1591664
+[2023-10-07 18:17:34 +0000] [1591665] [INFO] Booting worker with pid: 1591665
+[2023-10-07 18:17:34 +0000] [1591666] [INFO] Booting worker with pid: 1591666
+[2023-10-07 18:17:45,145] ERROR in app: Exception on /blog/create-post [POST]
+Traceback (most recent call last):
+  File "/root/.cache/pypoetry/virtualenvs/devopsblogapp-toCHNqgA-py3.9/lib/python3.9/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/root/.cache/pypoetry/virtualenvs/devopsblogapp-toCHNqgA-py3.9/lib/python3.9/site-packages/flask/app.py", line 1487, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "/root/.cache/pypoetry/virtualenvs/devopsblogapp-toCHNqgA-py3.9/lib/python3.9/site-packages/flask/app.py", line 1506, in finalize_request
+    response = self.make_response(rv)
+  File "/root/.cache/pypoetry/virtualenvs/devopsblogapp-toCHNqgA-py3.9/lib/python3.9/site-packages/flask/app.py", line 1801, in make_response
+    raise TypeError(
+TypeError: The view function for 'blog.create_post' did not return a valid response. The function either returned None or ended without a return statement.
+[2023-10-07 18:19:30 +0000] [1591661] [INFO] Handling signal: term
+[2023-10-07 18:19:30 +0000] [1591664] [INFO] Worker exiting (pid: 1591664)
+[2023-10-07 18:19:30 +0000] [1591665] [INFO] Worker exiting (pid: 1591665)
+[2023-10-07 18:19:30 +0000] [1591666] [INFO] Worker exiting (pid: 1591666)
+[2023-10-07 18:19:30 +0000] [1591661] [WARNING] Worker with pid 1591664 was terminated due to signal 15
+[2023-10-07 18:19:30 +0000] [1591661] [WARNING] Worker with pid 1591665 was terminated due to signal 15
+[2023-10-07 18:19:30 +0000] [1591661] [INFO] Shutting down: Master
+[2023-10-07 18:19:35 +0000] [1591770] [INFO] Starting gunicorn 20.1.0
+[2023-10-07 18:19:35 +0000] [1591770] [INFO] Listening at: unix:/run/gunicorn.sock (1591770)
+[2023-10-07 18:19:35 +0000] [1591770] [INFO] Using worker: sync
+[2023-10-07 18:19:35 +0000] [1591775] [INFO] Booting worker with pid: 1591775
+[2023-10-07 18:19:35 +0000] [1591776] [INFO] Booting worker with pid: 1591776
+[2023-10-07 18:19:35 +0000] [1591777] [INFO] Booting worker with pid: 1591777
+[2023-10-08 19:34:29 +0000] [1591770] [INFO] Handling signal: term
+[2023-10-08 19:34:29 +0000] [1591776] [INFO] Worker exiting (pid: 1591776)
+[2023-10-08 19:34:29 +0000] [1591777] [INFO] Worker exiting (pid: 1591777)
+[2023-10-08 19:34:29 +0000] [1591775] [INFO] Worker exiting (pid: 1591775)
+[2023-10-08 19:34:29 +0000] [1591770] [INFO] Shutting down: Master
+[2023-10-08 19:34:30 +0000] [1637769] [INFO] Starting gunicorn 20.1.0
+[2023-10-08 19:34:30 +0000] [1637769] [INFO] Listening at: unix:/run/gunicorn.sock (1637769)
+[2023-10-08 19:34:30 +0000] [1637769] [INFO] Using worker: sync
+[2023-10-08 19:34:30 +0000] [1637772] [INFO] Booting worker with pid: 1637772
+[2023-10-08 19:34:30 +0000] [1637773] [INFO] Booting worker with pid: 1637773
+[2023-10-08 19:34:30 +0000] [1637774] [INFO] Booting worker with pid: 1637774
+[2023-10-08 19:37:09 +0000] [1637769] [INFO] Handling signal: term
+[2023-10-08 19:37:09 +0000] [1637773] [INFO] Worker exiting (pid: 1637773)
+[2023-10-08 19:37:09 +0000] [1637772] [INFO] Worker exiting (pid: 1637772)
+[2023-10-08 19:37:09 +0000] [1637769] [WARNING] Worker with pid 1637773 was terminated due to signal 15
+[2023-10-08 19:37:09 +0000] [1637774] [INFO] Worker exiting (pid: 1637774)
+[2023-10-08 19:37:09 +0000] [1637769] [WARNING] Worker with pid 1637772 was terminated due to signal 15
+[2023-10-08 19:37:09 +0000] [1637769] [INFO] Shutting down: Master
+[2023-10-08 19:37:10 +0000] [1637925] [INFO] Starting gunicorn 20.1.0
+[2023-10-08 19:37:10 +0000] [1637925] [INFO] Listening at: unix:/run/gunicorn.sock (1637925)
+[2023-10-08 19:37:10 +0000] [1637925] [INFO] Using worker: sync
+[2023-10-08 19:37:10 +0000] [1637928] [INFO] Booting worker with pid: 1637928
+[2023-10-08 19:37:10 +0000] [1637929] [INFO] Booting worker with pid: 1637929
+[2023-10-08 19:37:10 +0000] [1637930] [INFO] Booting worker with pid: 1637930
+[2023-10-08 20:08:39 +0000] [1637925] [INFO] Handling signal: term
+[2023-10-08 20:08:39 +0000] [1637928] [INFO] Worker exiting (pid: 1637928)
+[2023-10-08 20:08:39 +0000] [1637930] [INFO] Worker exiting (pid: 1637930)
+[2023-10-08 20:08:39 +0000] [1637929] [INFO] Worker exiting (pid: 1637929)
+[2023-10-08 20:08:39 +0000] [1637925] [WARNING] Worker with pid 1637930 was terminated due to signal 15
+[2023-10-08 20:08:39 +0000] [1637925] [INFO] Shutting down: Master
+[2023-10-08 20:08:40 +0000] [1638899] [INFO] Starting gunicorn 20.1.0
+[2023-10-08 20:08:40 +0000] [1638899] [INFO] Listening at: unix:/run/gunicorn.sock (1638899)
+[2023-10-08 20:08:40 +0000] [1638899] [INFO] Using worker: sync
+[2023-10-08 20:08:40 +0000] [1638904] [INFO] Booting worker with pid: 1638904
+[2023-10-08 20:08:40 +0000] [1638905] [INFO] Booting worker with pid: 1638905
+[2023-10-08 20:08:40 +0000] [1638906] [INFO] Booting worker with pid: 1638906
+[2023-10-08 20:09:54 +0000] [1638899] [INFO] Handling signal: term
+[2023-10-08 20:09:54 +0000] [1638904] [INFO] Worker exiting (pid: 1638904)
+[2023-10-08 20:09:54 +0000] [1638905] [INFO] Worker exiting (pid: 1638905)
+[2023-10-08 20:09:54 +0000] [1638906] [INFO] Worker exiting (pid: 1638906)
+[2023-10-08 20:09:54 +0000] [1638899] [WARNING] Worker with pid 1638905 was terminated due to signal 15
+[2023-10-08 20:09:54 +0000] [1638899] [INFO] Shutting down: Master
+[2023-10-08 20:09:57 +0000] [1639001] [INFO] Starting gunicorn 20.1.0
+[2023-10-08 20:09:57 +0000] [1639001] [INFO] Listening at: unix:/run/gunicorn.sock (1639001)
+[2023-10-08 20:09:57 +0000] [1639001] [INFO] Using worker: sync
+[2023-10-08 20:09:57 +0000] [1639004] [INFO] Booting worker with pid: 1639004
+[2023-10-08 20:09:57 +0000] [1639005] [INFO] Booting worker with pid: 1639005
+[2023-10-08 20:09:57 +0000] [1639006] [INFO] Booting worker with pid: 1639006
+[2023-10-08 20:36:19 +0000] [1639001] [INFO] Handling signal: term
+[2023-10-08 20:36:19 +0000] [1639005] [INFO] Worker exiting (pid: 1639005)
+[2023-10-08 20:36:19 +0000] [1639006] [INFO] Worker exiting (pid: 1639006)
+[2023-10-08 20:36:19 +0000] [1639004] [INFO] Worker exiting (pid: 1639004)
+[2023-10-08 20:36:19 +0000] [1639001] [WARNING] Worker with pid 1639005 was terminated due to signal 15
+[2023-10-08 20:36:19 +0000] [1639001] [INFO] Shutting down: Master
+[2023-10-08 20:36:20 +0000] [1639922] [INFO] Starting gunicorn 20.1.0
+[2023-10-08 20:36:20 +0000] [1639922] [INFO] Listening at: unix:/run/gunicorn.sock (1639922)
+[2023-10-08 20:36:20 +0000] [1639922] [INFO] Using worker: sync
+[2023-10-08 20:36:20 +0000] [1639927] [INFO] Booting worker with pid: 1639927
+[2023-10-08 20:36:20 +0000] [1639928] [INFO] Booting worker with pid: 1639928
+[2023-10-08 20:36:20 +0000] [1639929] [INFO] Booting worker with pid: 1639929
+[2023-10-08 23:45:54 +0000] [1639922] [INFO] Handling signal: term
+[2023-10-08 23:45:54 +0000] [1639929] [INFO] Worker exiting (pid: 1639929)
+[2023-10-08 23:45:54 +0000] [1639928] [INFO] Worker exiting (pid: 1639928)
+[2023-10-08 23:45:54 +0000] [1639927] [INFO] Worker exiting (pid: 1639927)
+[2023-10-08 23:45:54 +0000] [1639922] [WARNING] Worker with pid 1639928 was terminated due to signal 15
+[2023-10-08 23:45:55 +0000] [1639922] [INFO] Shutting down: Master
+[2023-10-08 23:45:55 +0000] [1645724] [INFO] Starting gunicorn 20.1.0
+[2023-10-08 23:45:55 +0000] [1645724] [INFO] Listening at: unix:/run/gunicorn.sock (1645724)
+[2023-10-08 23:45:55 +0000] [1645724] [INFO] Using worker: sync
+[2023-10-08 23:45:55 +0000] [1645729] [INFO] Booting worker with pid: 1645729
+[2023-10-08 23:45:55 +0000] [1645730] [INFO] Booting worker with pid: 1645730
+[2023-10-08 23:45:55 +0000] [1645731] [INFO] Booting worker with pid: 1645731
+[2024-01-16 02:04:03 +0000] [1645729] [INFO] Worker exiting (pid: 1645729)
+[2024-01-16 02:04:03 +0000] [1645730] [INFO] Worker exiting (pid: 1645730)
+[2024-01-16 02:04:03 +0000] [1645731] [INFO] Worker exiting (pid: 1645731)
+[2024-01-16 02:04:03 +0000] [1645724] [INFO] Handling signal: term
+[2024-01-16 02:04:03 +0000] [1645724] [WARNING] Worker with pid 1645731 was terminated due to signal 15
+[2024-01-16 02:04:03 +0000] [1645724] [WARNING] Worker with pid 1645730 was terminated due to signal 15
+[2024-01-16 02:04:04 +0000] [1645724] [INFO] Shutting down: Master
+[2024-01-16 02:04:05 +0000] [2543696] [INFO] Starting gunicorn 20.1.0
+[2024-01-16 02:04:05 +0000] [2543696] [INFO] Listening at: unix:/run/gunicorn.sock (2543696)
+[2024-01-16 02:04:05 +0000] [2543696] [INFO] Using worker: sync
+[2024-01-16 02:04:05 +0000] [2543700] [INFO] Booting worker with pid: 2543700
+[2024-01-16 02:04:05 +0000] [2543701] [INFO] Booting worker with pid: 2543701
+[2024-01-16 02:04:05 +0000] [2543702] [INFO] Booting worker with pid: 2543702
+[2024-02-12 04:28:00,792] ERROR in app: Exception on /blog/blog_post/4 [GET]
+Traceback (most recent call last):
+  File "/root/.cache/pypoetry/virtualenvs/devopsblogapp-toCHNqgA-py3.9/lib64/python3.9/site-packages/sqlalchemy/engine/base.py", line 1965, in _exec_single_context
+    self.dialect.do_execute(
+  File "/root/.cache/pypoetry/virtualenvs/devopsblogapp-toCHNqgA-py3.9/lib64/python3.9/site-packages/sqlalchemy/engine/default.py", line 921, in do_execute
+    cursor.execute(statement, parameters)
+psycopg2.OperationalError: SSL connection has been closed unexpectedly
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/root/.cache/pypoetry/virtualenvs/devopsblogapp-toCHNqgA-py3.9/lib/python3.9/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/root/.cache/pypoetry/virtualenvs/devopsblogapp-toCHNqgA-py3.9/lib/python3.9/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/root/.cache/pypoetry/virtualenvs/devopsblogapp-toCHNqgA-py3.9/lib/python3.9/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/root/.cache/pypoetry/virtualenvs/devopsblogapp-toCHNqgA-py3.9/lib/python3.9/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/ec2-user/DevOpsFlasked/DevOpsFlaskedSite/blog.py", line 32, in blog_post
+    post = db.session.execute(sqla.text(f"SELECT * FROM formatted_post WHERE id = {post_id}"))
+  File "/root/.cache/pypoetry/virtualenvs/devopsblogapp-toCHNqgA-py3.9/lib64/python3.9/site-packages/sqlalchemy/orm/scoping.py", line 723, in execute
+    return self._proxied.execute(
+  File "/root/.cache/pypoetry/virtualenvs/devopsblogapp-toCHNqgA-py3.9/lib64/python3.9/site-packages/sqlalchemy/orm/session.py", line 2246, in execute
+    return self._execute_internal(
+  File "/root/.cache/pypoetry/virtualenvs/devopsblogapp-toCHNqgA-py3.9/lib64/python3.9/site-packages/sqlalchemy/orm/session.py", line 2150, in _execute_internal
+    result = conn.execute(
+  File "/root/.cache/pypoetry/virtualenvs/devopsblogapp-toCHNqgA-py3.9/lib64/python3.9/site-packages/sqlalchemy/engine/base.py", line 1412, in execute
+    return meth(
+  File "/root/.cache/pypoetry/virtualenvs/devopsblogapp-toCHNqgA-py3.9/lib64/python3.9/site-packages/sqlalchemy/sql/elements.py", line 483, in _execute_on_connection
+    return connection._execute_clauseelement(
+  File "/root/.cache/pypoetry/virtualenvs/devopsblogapp-toCHNqgA-py3.9/lib64/python3.9/site-packages/sqlalchemy/engine/base.py", line 1635, in _execute_clauseelement
+    ret = self._execute_context(
+  File "/root/.cache/pypoetry/virtualenvs/devopsblogapp-toCHNqgA-py3.9/lib64/python3.9/site-packages/sqlalchemy/engine/base.py", line 1844, in _execute_context
+    return self._exec_single_context(
+  File "/root/.cache/pypoetry/virtualenvs/devopsblogapp-toCHNqgA-py3.9/lib64/python3.9/site-packages/sqlalchemy/engine/base.py", line 1984, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "/root/.cache/pypoetry/virtualenvs/devopsblogapp-toCHNqgA-py3.9/lib64/python3.9/site-packages/sqlalchemy/engine/base.py", line 2339, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "/root/.cache/pypoetry/virtualenvs/devopsblogapp-toCHNqgA-py3.9/lib64/python3.9/site-packages/sqlalchemy/engine/base.py", line 1965, in _exec_single_context
+    self.dialect.do_execute(
+  File "/root/.cache/pypoetry/virtualenvs/devopsblogapp-toCHNqgA-py3.9/lib64/python3.9/site-packages/sqlalchemy/engine/default.py", line 921, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.OperationalError: (psycopg2.OperationalError) SSL connection has been closed unexpectedly
+
+[SQL: SELECT * FROM formatted_post WHERE id = 4]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+[2024-02-12 17:48:43,253] ERROR in app: Exception on /blog/blog_post/2 [GET]
+Traceback (most recent call last):
+  File "/root/.cache/pypoetry/virtualenvs/devopsblogapp-toCHNqgA-py3.9/lib64/python3.9/site-packages/sqlalchemy/engine/base.py", line 1965, in _exec_single_context
+    self.dialect.do_execute(
+  File "/root/.cache/pypoetry/virtualenvs/devopsblogapp-toCHNqgA-py3.9/lib64/python3.9/site-packages/sqlalchemy/engine/default.py", line 921, in do_execute
+    cursor.execute(statement, parameters)
+psycopg2.OperationalError: SSL connection has been closed unexpectedly
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/root/.cache/pypoetry/virtualenvs/devopsblogapp-toCHNqgA-py3.9/lib/python3.9/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/root/.cache/pypoetry/virtualenvs/devopsblogapp-toCHNqgA-py3.9/lib/python3.9/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/root/.cache/pypoetry/virtualenvs/devopsblogapp-toCHNqgA-py3.9/lib/python3.9/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/root/.cache/pypoetry/virtualenvs/devopsblogapp-toCHNqgA-py3.9/lib/python3.9/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/ec2-user/DevOpsFlasked/DevOpsFlaskedSite/blog.py", line 32, in blog_post
+    post = db.session.execute(sqla.text(f"SELECT * FROM formatted_post WHERE id = {post_id}"))
+  File "/root/.cache/pypoetry/virtualenvs/devopsblogapp-toCHNqgA-py3.9/lib64/python3.9/site-packages/sqlalchemy/orm/scoping.py", line 723, in execute
+    return self._proxied.execute(
+  File "/root/.cache/pypoetry/virtualenvs/devopsblogapp-toCHNqgA-py3.9/lib64/python3.9/site-packages/sqlalchemy/orm/session.py", line 2246, in execute
+    return self._execute_internal(
+  File "/root/.cache/pypoetry/virtualenvs/devopsblogapp-toCHNqgA-py3.9/lib64/python3.9/site-packages/sqlalchemy/orm/session.py", line 2150, in _execute_internal
+    result = conn.execute(
+  File "/root/.cache/pypoetry/virtualenvs/devopsblogapp-toCHNqgA-py3.9/lib64/python3.9/site-packages/sqlalchemy/engine/base.py", line 1412, in execute
+    return meth(
+  File "/root/.cache/pypoetry/virtualenvs/devopsblogapp-toCHNqgA-py3.9/lib64/python3.9/site-packages/sqlalchemy/sql/elements.py", line 483, in _execute_on_connection
+    return connection._execute_clauseelement(
+  File "/root/.cache/pypoetry/virtualenvs/devopsblogapp-toCHNqgA-py3.9/lib64/python3.9/site-packages/sqlalchemy/engine/base.py", line 1635, in _execute_clauseelement
+    ret = self._execute_context(
+  File "/root/.cache/pypoetry/virtualenvs/devopsblogapp-toCHNqgA-py3.9/lib64/python3.9/site-packages/sqlalchemy/engine/base.py", line 1844, in _execute_context
+    return self._exec_single_context(
+  File "/root/.cache/pypoetry/virtualenvs/devopsblogapp-toCHNqgA-py3.9/lib64/python3.9/site-packages/sqlalchemy/engine/base.py", line 1984, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "/root/.cache/pypoetry/virtualenvs/devopsblogapp-toCHNqgA-py3.9/lib64/python3.9/site-packages/sqlalchemy/engine/base.py", line 2339, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "/root/.cache/pypoetry/virtualenvs/devopsblogapp-toCHNqgA-py3.9/lib64/python3.9/site-packages/sqlalchemy/engine/base.py", line 1965, in _exec_single_context
+    self.dialect.do_execute(
+  File "/root/.cache/pypoetry/virtualenvs/devopsblogapp-toCHNqgA-py3.9/lib64/python3.9/site-packages/sqlalchemy/engine/default.py", line 921, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.OperationalError: (psycopg2.OperationalError) SSL connection has been closed unexpectedly
+
+[SQL: SELECT * FROM formatted_post WHERE id = 2]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+[2024-02-21 18:44:23,568] ERROR in app: Exception on /blog/posts [GET]
+Traceback (most recent call last):
+  File "/root/.cache/pypoetry/virtualenvs/devopsblogapp-toCHNqgA-py3.9/lib64/python3.9/site-packages/sqlalchemy/engine/base.py", line 1965, in _exec_single_context
+    self.dialect.do_execute(
+  File "/root/.cache/pypoetry/virtualenvs/devopsblogapp-toCHNqgA-py3.9/lib64/python3.9/site-packages/sqlalchemy/engine/default.py", line 921, in do_execute
+    cursor.execute(statement, parameters)
+psycopg2.OperationalError: SSL connection has been closed unexpectedly
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/root/.cache/pypoetry/virtualenvs/devopsblogapp-toCHNqgA-py3.9/lib/python3.9/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/root/.cache/pypoetry/virtualenvs/devopsblogapp-toCHNqgA-py3.9/lib/python3.9/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/root/.cache/pypoetry/virtualenvs/devopsblogapp-toCHNqgA-py3.9/lib/python3.9/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/root/.cache/pypoetry/virtualenvs/devopsblogapp-toCHNqgA-py3.9/lib/python3.9/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/ec2-user/DevOpsFlasked/DevOpsFlaskedSite/blog.py", line 19, in posts
+    posts = db.session.execute(sqla.text("SELECT * FROM formatted_post"))
+  File "/root/.cache/pypoetry/virtualenvs/devopsblogapp-toCHNqgA-py3.9/lib64/python3.9/site-packages/sqlalchemy/orm/scoping.py", line 723, in execute
+    return self._proxied.execute(
+  File "/root/.cache/pypoetry/virtualenvs/devopsblogapp-toCHNqgA-py3.9/lib64/python3.9/site-packages/sqlalchemy/orm/session.py", line 2246, in execute
+    return self._execute_internal(
+  File "/root/.cache/pypoetry/virtualenvs/devopsblogapp-toCHNqgA-py3.9/lib64/python3.9/site-packages/sqlalchemy/orm/session.py", line 2150, in _execute_internal
+    result = conn.execute(
+  File "/root/.cache/pypoetry/virtualenvs/devopsblogapp-toCHNqgA-py3.9/lib64/python3.9/site-packages/sqlalchemy/engine/base.py", line 1412, in execute
+    return meth(
+  File "/root/.cache/pypoetry/virtualenvs/devopsblogapp-toCHNqgA-py3.9/lib64/python3.9/site-packages/sqlalchemy/sql/elements.py", line 483, in _execute_on_connection
+    return connection._execute_clauseelement(
+  File "/root/.cache/pypoetry/virtualenvs/devopsblogapp-toCHNqgA-py3.9/lib64/python3.9/site-packages/sqlalchemy/engine/base.py", line 1635, in _execute_clauseelement
+    ret = self._execute_context(
+  File "/root/.cache/pypoetry/virtualenvs/devopsblogapp-toCHNqgA-py3.9/lib64/python3.9/site-packages/sqlalchemy/engine/base.py", line 1844, in _execute_context
+    return self._exec_single_context(
+  File "/root/.cache/pypoetry/virtualenvs/devopsblogapp-toCHNqgA-py3.9/lib64/python3.9/site-packages/sqlalchemy/engine/base.py", line 1984, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "/root/.cache/pypoetry/virtualenvs/devopsblogapp-toCHNqgA-py3.9/lib64/python3.9/site-packages/sqlalchemy/engine/base.py", line 2339, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "/root/.cache/pypoetry/virtualenvs/devopsblogapp-toCHNqgA-py3.9/lib64/python3.9/site-packages/sqlalchemy/engine/base.py", line 1965, in _exec_single_context
+    self.dialect.do_execute(
+  File "/root/.cache/pypoetry/virtualenvs/devopsblogapp-toCHNqgA-py3.9/lib64/python3.9/site-packages/sqlalchemy/engine/default.py", line 921, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.OperationalError: (psycopg2.OperationalError) SSL connection has been closed unexpectedly
+
+[SQL: SELECT * FROM formatted_post]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)

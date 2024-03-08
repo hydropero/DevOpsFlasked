@@ -4,6 +4,7 @@ import sqlalchemy as sqla
 from . import db
 import simplejson
 import markdown
+import re
 
 blog = Blueprint("blog", __name__)
 
@@ -34,7 +35,13 @@ def blog_post(post_id):
     print(post_deserialized)
     print(type(post_deserialized))
     post_deserialized.update((k, markdown.markdown(v)) for k, v in post_deserialized.items() if k == "post_content")
-    return render_template('blogpost.html', post=post_deserialized)
+    # this is to replace existing image links dynamically for ease
+    if "https://mylesdomain.com/images/" in post_deserialized:
+        post_deserialized = re.sub("/!\[.*\]\(", "![](", post_deserialized)
+        # this is to ensure the variable exists regardless of whether the if statement executes
+    processed_post = post_deserialized.replace("![](", "![](/images/_resources/")
+
+    return render_template('blogpost.html', post=processed_post)
 
 
 @blog.route("/create-post", methods=["GET", "POST"])
