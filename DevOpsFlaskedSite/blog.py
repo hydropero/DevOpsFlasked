@@ -41,7 +41,7 @@ def blog_post(post_id):
         post_deserialized["post_content"] = re.sub("!\[.*\]\(", "![](", post_deserialized["post_content"])
         post_content_test = re.sub("!\[.*\]\(", "![](", post_deserialized["post_content"])
         # this is to ensure the variable exists regardless of whether the if statement executes
-    post_deserialized["post_content"] = re.sub("!\[.*\]\(", "![](/images/_resources/", post_deserialized["post_content"])
+    p = re.sub("!\[.*\]\(", "![](/images/_resources/", post_deserialized["post_content"])
     post_content_test = re.sub("!\[.*\]\(", "![](/images/_resources/", post_deserialized["post_content"])
    
     txt = '''# Deploying a Pi-Hole DNS Server (Network-Wide)
@@ -51,7 +51,7 @@ def blog_post(post_id):
       '''
     x = re.sub("!\[.*\]\(", "![](/images/_resources/", txt)
 
-    return render_template('blogpost.html', post=post_deserialized, post_content_test=x)
+    return render_template('blogpost.html', post=post_deserialized, post_content_test=p)
 
 
 @blog.route("/create-post", methods=["GET", "POST"])
