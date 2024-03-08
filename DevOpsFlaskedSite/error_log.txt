@@ -159,3 +159,15 @@ Traceback (most recent call last):
   File "/home/ec2-user/DevOpsFlasked/DevOpsFlaskedSite/templates/blogpost.html", line 23, in template
     <span>{{ post_content_test }</span>
 jinja2.exceptions.TemplateSyntaxError: unexpected '}'
+[2024-03-08 19:03:53 +0000] [896618] [INFO] Handling signal: term
+[2024-03-08 19:03:53 +0000] [896623] [INFO] Worker exiting (pid: 896623)
+[2024-03-08 19:03:53 +0000] [896624] [INFO] Worker exiting (pid: 896624)
+[2024-03-08 19:03:53 +0000] [896625] [INFO] Worker exiting (pid: 896625)
+[2024-03-08 19:03:53 +0000] [896618] [WARNING] Worker with pid 896623 was terminated due to signal 15
+[2024-03-08 19:03:53 +0000] [896618] [INFO] Shutting down: Master
+[2024-03-08 19:03:59 +0000] [896731] [INFO] Starting gunicorn 20.1.0
+[2024-03-08 19:03:59 +0000] [896731] [INFO] Listening at: unix:/run/gunicorn.sock (896731)
+[2024-03-08 19:03:59 +0000] [896731] [INFO] Using worker: sync
+[2024-03-08 19:03:59 +0000] [896736] [INFO] Booting worker with pid: 896736
+[2024-03-08 19:03:59 +0000] [896737] [INFO] Booting worker with pid: 896737
+[2024-03-08 19:03:59 +0000] [896738] [INFO] Booting worker with pid: 896738
