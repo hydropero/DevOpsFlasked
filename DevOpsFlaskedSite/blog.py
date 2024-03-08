@@ -57,15 +57,7 @@ def blog_post(post_id):
     post_deserialized["post_content"] = render_links(post_deserialized["post_content"]) 
     post_deserialized.update((k, markdown.markdown(v)) for k, v in post_deserialized.items() if k == "post_content") 
     
-    txt = '''# Deploying a Pi-Hole DNS Server (Network-Wide)
-
-      ![3ee6751925ac792c5b51648f5a5a9f75.png](:/f5a44b4b705c48938f136537142a88f4)
-
-      '''
-    x = re.sub("!\[.*\]\(", "![](/images/_resources/", txt)
-    print(p)
-
-    return render_template('blogpost.html', post=post_deserialized, post_content_test=p)
+    return render_template('blogpost.html', post=post_deserialized)
 
 
 @blog.route("/create-post", methods=["GET", "POST"])
