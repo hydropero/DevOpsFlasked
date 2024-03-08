@@ -93,3 +93,15 @@ NameError: name 'post_deserialize' is not defined
 [2024-03-08 18:29:39 +0000] [895043] [INFO] Booting worker with pid: 895043
 [2024-03-08 18:29:39 +0000] [895044] [INFO] Booting worker with pid: 895044
 [2024-03-08 18:29:39 +0000] [895045] [INFO] Booting worker with pid: 895045
+[2024-03-08 18:34:18 +0000] [895038] [INFO] Handling signal: term
+[2024-03-08 18:34:18 +0000] [895043] [INFO] Worker exiting (pid: 895043)
+[2024-03-08 18:34:18 +0000] [895044] [INFO] Worker exiting (pid: 895044)
+[2024-03-08 18:34:18 +0000] [895045] [INFO] Worker exiting (pid: 895045)
+[2024-03-08 18:34:18 +0000] [895038] [WARNING] Worker with pid 895043 was terminated due to signal 15
+[2024-03-08 18:34:18 +0000] [895038] [INFO] Shutting down: Master
+[2024-03-08 18:34:24 +0000] [895339] [INFO] Starting gunicorn 20.1.0
+[2024-03-08 18:34:24 +0000] [895339] [INFO] Listening at: unix:/run/gunicorn.sock (895339)
+[2024-03-08 18:34:24 +0000] [895339] [INFO] Using worker: sync
+[2024-03-08 18:34:24 +0000] [895344] [INFO] Booting worker with pid: 895344
+[2024-03-08 18:34:24 +0000] [895345] [INFO] Booting worker with pid: 895345
+[2024-03-08 18:34:24 +0000] [895346] [INFO] Booting worker with pid: 895346
