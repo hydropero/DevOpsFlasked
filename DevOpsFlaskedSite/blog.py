@@ -62,6 +62,7 @@ def blog_post(post_id):
 
       '''
     x = re.sub("!\[.*\]\(", "![](/images/_resources/", txt)
+    print(p)
 
     return render_template('blogpost.html', post=post_deserialized, post_content_test=p)
 
