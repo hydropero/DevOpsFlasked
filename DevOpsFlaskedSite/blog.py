@@ -46,7 +46,6 @@ def blog_post(post_id):
     post_deserialized = dict(post.mappings().all()[0])
     print(post_deserialized)
     print(type(post_deserialized))
-    post_deserialized.update((k, markdown.markdown(v)) for k, v in post_deserialized.items() if k == "post_content")
     # this is to replace existing image links dynamically for ease
     post_content_test = post_deserialized["post_content"]
     if "https://mylesdomain.com/images/" in post_deserialized["post_content"]:
