@@ -8,6 +8,18 @@ import re
 
 blog = Blueprint("blog", __name__)
 
+def render_links(content):
+    matches = re.findall(r"!\[(\w*)\]", content)
+
+    for filename in matches:
+        start_filename_index = content.find(filename)
+        end_filename_index = (start_filename_index + len(filename) + 1)
+        end_of_url = content.find(")", end_filename_index) + 1
+        content = content[:end_filename_index] + content[end_of_url:]
+
+        content = content.replace(f"![{filename}]", f"![](images/_resources/{filename}/)")
+    return content
+
 def row2dict(row):
     d = {}
     for column in row.__table__.columns:
@@ -42,7 +54,7 @@ def blog_post(post_id):
         post_content_test = re.sub("!\[.*\]\(", "![](", post_deserialized["post_content"])
         # this is to ensure the variable exists regardless of whether the if statement executes
     p = re.sub("!\[.*\]\(", "![](/images/_resources/", str(post_deserialized["post_content"]))
-    post_content_test = re.sub("!\[.*\]\(", "![](/images/_resources/", str(post_deserialized["post_content"]))
+    post_deserialized["post_content"] = render_links(post_deserialized["post_content"]) 
    
     txt = '''# Deploying a Pi-Hole DNS Server (Network-Wide)
 

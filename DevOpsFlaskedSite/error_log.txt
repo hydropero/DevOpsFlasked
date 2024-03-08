@@ -195,3 +195,15 @@ jinja2.exceptions.TemplateSyntaxError: unexpected '}'
 [2024-03-08 19:20:44 +0000] [897427] [INFO] Booting worker with pid: 897427
 [2024-03-08 19:20:44 +0000] [897428] [INFO] Booting worker with pid: 897428
 [2024-03-08 19:20:44 +0000] [897429] [INFO] Booting worker with pid: 897429
+[2024-03-08 19:24:38 +0000] [897422] [INFO] Handling signal: term
+[2024-03-08 19:24:38 +0000] [897427] [INFO] Worker exiting (pid: 897427)
+[2024-03-08 19:24:38 +0000] [897428] [INFO] Worker exiting (pid: 897428)
+[2024-03-08 19:24:38 +0000] [897429] [INFO] Worker exiting (pid: 897429)
+[2024-03-08 19:24:38 +0000] [897422] [WARNING] Worker with pid 897427 was terminated due to signal 15
+[2024-03-08 19:24:38 +0000] [897422] [INFO] Shutting down: Master
+[2024-03-08 19:24:44 +0000] [897596] [INFO] Starting gunicorn 20.1.0
+[2024-03-08 19:24:44 +0000] [897596] [INFO] Listening at: unix:/run/gunicorn.sock (897596)
+[2024-03-08 19:24:44 +0000] [897596] [INFO] Using worker: sync
+[2024-03-08 19:24:44 +0000] [897601] [INFO] Booting worker with pid: 897601
+[2024-03-08 19:24:44 +0000] [897602] [INFO] Booting worker with pid: 897602
+[2024-03-08 19:24:44 +0000] [897603] [INFO] Booting worker with pid: 897603
