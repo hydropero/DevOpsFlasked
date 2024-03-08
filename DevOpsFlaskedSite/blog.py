@@ -38,7 +38,7 @@ def blog_post(post_id):
     # this is to replace existing image links dynamically for ease
     
     if "https://mylesdomain.com/images/" in post_deserialized["post_content"]:
-        post_deserialized["post_content"] = re.sub("/!\[.*\]\(", "![](", post_deserialize["post_content"])
+        post_deserialized["post_content"] = re.sub("/!\[.*\]\(", "![](", post_deserialized["post_content"])
         # this is to ensure the variable exists regardless of whether the if statement executes
     post_deserialized["post_content"].replace("![](", "![](/images/_resources/")
 
