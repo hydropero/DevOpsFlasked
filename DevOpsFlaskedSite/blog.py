@@ -52,8 +52,8 @@ def blog_post(post_id):
         post_deserialized["post_content"] = re.sub("!\[.*\]\(", "![](", post_deserialized["post_content"])
         # this is to ensure the variable exists regardless of whether the if statement executes
     
-    post_deserialized["post_content"] += render_links(post_deserialized["post_content"]) 
-    #post_deserialized.update((k, markdown.markdown(v)) for k, v in post_deserialized.items() if k == "post_content") 
+    post_deserialized["post_content"] = render_links(post_deserialized["post_content"]) 
+    post_deserialized.update((k, markdown.markdown(v)) for k, v in post_deserialized.items() if k == "post_content") 
     
     return render_template('blogpost.html', post=post_deserialized)
 
