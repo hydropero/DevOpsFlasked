@@ -1654,3 +1654,15 @@ SyntaxError: invalid syntax
 [2024-03-08 21:22:17 +0000] [902463] [INFO] Booting worker with pid: 902463
 [2024-03-08 21:22:17 +0000] [902464] [INFO] Booting worker with pid: 902464
 [2024-03-08 21:22:17 +0000] [902465] [INFO] Booting worker with pid: 902465
+[2024-03-08 21:25:19 +0000] [902460] [INFO] Handling signal: term
+[2024-03-08 21:25:19 +0000] [902463] [INFO] Worker exiting (pid: 902463)
+[2024-03-08 21:25:19 +0000] [902464] [INFO] Worker exiting (pid: 902464)
+[2024-03-08 21:25:19 +0000] [902465] [INFO] Worker exiting (pid: 902465)
+[2024-03-08 21:25:19 +0000] [902460] [WARNING] Worker with pid 902463 was terminated due to signal 15
+[2024-03-08 21:25:19 +0000] [902460] [INFO] Shutting down: Master
+[2024-03-08 21:25:22 +0000] [902678] [INFO] Starting gunicorn 20.1.0
+[2024-03-08 21:25:22 +0000] [902678] [INFO] Listening at: unix:/run/gunicorn.sock (902678)
+[2024-03-08 21:25:22 +0000] [902678] [INFO] Using worker: sync
+[2024-03-08 21:25:22 +0000] [902681] [INFO] Booting worker with pid: 902681
+[2024-03-08 21:25:22 +0000] [902682] [INFO] Booting worker with pid: 902682
+[2024-03-08 21:25:22 +0000] [902683] [INFO] Booting worker with pid: 902683
