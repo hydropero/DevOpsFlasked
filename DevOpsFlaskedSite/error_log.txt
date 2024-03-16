@@ -1715,3 +1715,27 @@ SyntaxError: invalid syntax
 [2024-03-16 19:59:04 +0000] [1315315] [INFO] Booting worker with pid: 1315315
 [2024-03-16 19:59:04 +0000] [1315316] [INFO] Booting worker with pid: 1315316
 [2024-03-16 19:59:04 +0000] [1315317] [INFO] Booting worker with pid: 1315317
+[2024-03-16 19:59:32 +0000] [1315310] [INFO] Handling signal: term
+[2024-03-16 19:59:32 +0000] [1315315] [INFO] Worker exiting (pid: 1315315)
+[2024-03-16 19:59:32 +0000] [1315316] [INFO] Worker exiting (pid: 1315316)
+[2024-03-16 19:59:32 +0000] [1315317] [INFO] Worker exiting (pid: 1315317)
+[2024-03-16 19:59:32 +0000] [1315310] [WARNING] Worker with pid 1315315 was terminated due to signal 15
+[2024-03-16 19:59:33 +0000] [1315310] [INFO] Shutting down: Master
+[2024-03-16 19:59:39 +0000] [1315411] [INFO] Starting gunicorn 20.1.0
+[2024-03-16 19:59:39 +0000] [1315411] [INFO] Listening at: unix:/run/gunicorn.sock (1315411)
+[2024-03-16 19:59:39 +0000] [1315411] [INFO] Using worker: sync
+[2024-03-16 19:59:39 +0000] [1315416] [INFO] Booting worker with pid: 1315416
+[2024-03-16 19:59:39 +0000] [1315417] [INFO] Booting worker with pid: 1315417
+[2024-03-16 19:59:39 +0000] [1315418] [INFO] Booting worker with pid: 1315418
+[2024-03-16 20:06:04 +0000] [1315411] [INFO] Handling signal: term
+[2024-03-16 20:06:04 +0000] [1315416] [INFO] Worker exiting (pid: 1315416)
+[2024-03-16 20:06:04 +0000] [1315417] [INFO] Worker exiting (pid: 1315417)
+[2024-03-16 20:06:04 +0000] [1315418] [INFO] Worker exiting (pid: 1315418)
+[2024-03-16 20:06:05 +0000] [1315411] [WARNING] Worker with pid 1315416 was terminated due to signal 15
+[2024-03-16 20:06:05 +0000] [1315411] [INFO] Shutting down: Master
+[2024-03-16 20:06:11 +0000] [1315803] [INFO] Starting gunicorn 20.1.0
+[2024-03-16 20:06:11 +0000] [1315803] [INFO] Listening at: unix:/run/gunicorn.sock (1315803)
+[2024-03-16 20:06:11 +0000] [1315803] [INFO] Using worker: sync
+[2024-03-16 20:06:11 +0000] [1315808] [INFO] Booting worker with pid: 1315808
+[2024-03-16 20:06:11 +0000] [1315809] [INFO] Booting worker with pid: 1315809
+[2024-03-16 20:06:11 +0000] [1315810] [INFO] Booting worker with pid: 1315810
