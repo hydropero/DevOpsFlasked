@@ -87,7 +87,7 @@ p {
 
 .homepage_style{
   color: rgba(33,37,41);
-  font-weight: 500;
+  font-weight: 600 !important;
   font-family: Arial,sans-serif !important;
 }
 
