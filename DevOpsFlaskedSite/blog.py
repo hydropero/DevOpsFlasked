@@ -17,7 +17,7 @@ def render_links(content):
         end_of_url = content.find(")", end_filename_index) + 1
         content = content[:end_filename_index] + content[end_of_url:]
 
-        content = content.replace(f"![{filename}]", f"![](https://mylesdomain.com/images/_resources/{filename}))")
+        content = content.replace(f"![{filename}]", f"![](https://mylesdomain.com/images/_resources/{filename})")
     return content
 
 def row2dict(row):
