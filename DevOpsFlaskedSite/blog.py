@@ -9,7 +9,7 @@ import re
 blog = Blueprint("blog", __name__)
 
 def render_links(content):
-    matches = re.findall(r"!\[(\w*\.\w{2,4})\]", content)
+    matches = re.findall(r"!\[((\w|-)*\d\.\w{2,4})\]", content)
 
     for filename in matches:
         start_filename_index = content.find(filename)
@@ -52,7 +52,7 @@ def blog_post(post_id):
         post_deserialized["post_content"] = re.sub("!\[.*\]\(", "![](", post_deserialized["post_content"])
         # this is to ensure the variable exists regardless of whether the if statement executes
     
-    post_deserialized["post_content"] = render_links(post_deserialized["post_content"]) 
+    post_deserialized["post_content"] = render_links(post_deserialized["post_content"])
     post_deserialized.update((k, markdown.markdown(v)) for k, v in post_deserialized.items() if k == "post_content") 
     
     return render_template('blogpost.html', post=post_deserialized)
