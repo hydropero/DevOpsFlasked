@@ -100,5 +100,5 @@ p {
 
 code {
   color: rgba(51,255,0) !important;
-  white-space: preserve;
+  white-space: preserve !important;
 }
