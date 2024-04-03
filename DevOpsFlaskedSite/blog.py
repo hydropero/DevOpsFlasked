@@ -9,7 +9,7 @@ import re
 blog = Blueprint("blog", __name__)
 
 def render_links(content):
-    matches = re.findall(r"!\[((\w|-)*\d\.\w{2,4})\]", content)[0]
+    matches = re.findall(r"!\[([\w|-]*\d\.\w{2,4})\]", content)
 
     for filename in matches:
         start_filename_index = content.find(filename)
