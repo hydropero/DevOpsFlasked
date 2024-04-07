@@ -15,13 +15,13 @@
     {% block nav %}
     <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark shadow-lg">
       <div class="container-fluid d-flex justify-content-between align-items-center">
-        <div class="container"> <!-- Wrapper to center existing elements -->
-        <div class="row justify-content-center">
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <div class="container"> <!-- Wrapper to center existing elements -->
+            <div class="row justify-content-center">
           <ul class="navbar-nav me-auto mx-auto mb-lg-0">
             <li class="nav-item">
               <a class="nav-link {{ home_is_active }}" aria-current="page" href="/#"><button type="button" class="btn btn-outline-primary">Home</button></a>
@@ -37,11 +37,11 @@
           </ul>
           </div>
         </div>
-        
+      </div>
           <span class="ml-auto">
             <a href=""><button type="button" class="btn btn-outline-primary">Myles Bulla</button></a>
           </span>
-        </div>
+        
       </div>
     </nav>
 
