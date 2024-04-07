@@ -45,8 +45,8 @@
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mx-auto"> <!-- Using mx-auto to center the items horizontally -->
+        <div class="collapse navbar-collapse d-flex justify-content-center" id="navbarSupportedContent">
+          <ul class="navbar-nav"> <!-- Highlighted -->
             <li class="nav-item">
               <a class="nav-link" href="#">Link 1</a>
             </li>
@@ -60,7 +60,9 @@
               <a class="nav-link" href="#">Link 4</a>
             </li>
           </ul>
-          <ul class="navbar-nav ml-auto"> <!-- Using ml-auto to push the item to the right -->
+        </div>
+        <div class="ml-auto"> <!-- Highlighted -->
+          <ul class="navbar-nav"> <!-- Highlighted -->
             <li class="nav-item">
               <a class="nav-link" href="#">Additional Element</a>
             </li>
@@ -68,7 +70,6 @@
         </div>
       </div>
     </nav>
-    
     {% endblock %}
     <div id="content">{% block content %}{% endblock %}</div>
   </div>
