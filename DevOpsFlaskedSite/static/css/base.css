@@ -97,7 +97,6 @@ p {
   margin-top: 20px !important;
 }
 
-code {
+pre {
   color: rgba(51,255,0) !important;
-  white-space: preserve !important;
 }
