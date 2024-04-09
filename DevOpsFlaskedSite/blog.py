@@ -9,16 +9,19 @@ import re
 blog = Blueprint("blog", __name__)
 
 def render_links(content):
-    matches = re.findall(r"!\[([\w-]*\d\.\w{2,4})\]", content)
-
-    for filename in matches:
+    matches = re.findall(r"\[([^\]]+)\]|\(([^)]+)\)", content)
+    
+    for match in matches:
+        filename = match[0] if match[0] else match[1].split('/')[-1].split('.')[0]
         start_filename_index = content.find(filename)
-        end_filename_index = (start_filename_index + len(filename) + 1)
+        end_filename_index = start_filename_index + len(filename)
         end_of_url = content.find(")", end_filename_index) + 1
-        content = content[:end_filename_index] + content[end_of_url:]
-
-        content = content.replace(f"![{filename}]", f"![](https://mylesdomain.com/images/_resources/{filename})")
+        content = content[:start_filename_index] + f"![](https://mylesdomain.com/images/_resources/{filename})" + content[end_of_url:]
+        
     return content
+
+print(render_links("![a8beede56875165599ebf6b76b4c8dc0.png](:/7d3ec298b66c40639d030b7b3ec76bf9)"))
+
 
 def row2dict(row):
     d = {}
