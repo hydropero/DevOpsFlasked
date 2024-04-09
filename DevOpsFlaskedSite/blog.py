@@ -16,7 +16,7 @@ def render_links(content):
         start_filename_index = content.find(filename)
         end_filename_index = start_filename_index + len(filename)
         end_of_url = content.find(")", end_filename_index) + 1
-        content = content[:start_filename_index] + f"![](https://mylesdomain.com/images/_resources/{filename})" + content[end_of_url:]
+        content = content[:start_filename_index] + f"![](https://mylesdomain.com/images/_resources/{filename}.png)" + content[end_of_url:]
         
     return content
 
