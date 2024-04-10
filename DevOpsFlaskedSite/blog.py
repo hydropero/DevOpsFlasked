@@ -9,9 +9,15 @@ import re
 blog = Blueprint("blog", __name__)
 
 def render_links(content):
-    matches = re.findall(r":\/(\w+)", content)
+    matches = re.findall(r"!\[([\w-]*\d\.\w{2,4})\]", content)
+
     for filename in matches:
-        content = f"![](https://mylesdomain.com/images/_resources/{filename}.png)"
+        start_filename_index = content.find(filename)
+        end_filename_index = (start_filename_index + len(filename) + 1)
+        end_of_url = content.find(")", end_filename_index) + 1
+        content = content[:end_filename_index] + content[end_of_url:]
+
+        content = content.replace(f"![{filename}]", f"![](https://mylesdomain.com/images/_resources/{filename})")
     return content
 
 def row2dict(row):
