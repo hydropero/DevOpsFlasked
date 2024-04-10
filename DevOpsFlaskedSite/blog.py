@@ -9,7 +9,7 @@ import re
 blog = Blueprint("blog", __name__)
 
 def render_links(content):
-    matches = re.findall(r"((!\[[\w-]]+.png])\(:\/([\w-]+))", content)
+    matches = re.findall(r"((!\[[\w-]+.png])\(:\/([\w-]+))", content)
     print(matches)
     for filename in matches:
         print("match at index 0" + filename[1])
