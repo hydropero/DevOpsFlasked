@@ -100,3 +100,7 @@ p {
 pre {
   color: rgba(51,255,0) !important;
 }
+
+ul li {
+  margin-bottom: 4px;
+}
