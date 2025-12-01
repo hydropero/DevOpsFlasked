@@ -1,0 +1,255 @@
+Nov 18 17:30:14 mylesdomain.com systemd[1]: Starting jenkins.service - Jenkins Continuous Integration Server...
+░░ Subject: A start job for unit jenkins.service has begun execution
+░░ Defined-By: systemd
+░░ Support: https://lists.freedesktop.org/mailman/listinfo/systemd-devel
+░░ 
+░░ A start job for unit jenkins.service has begun execution.
+░░ 
+░░ The job identifier is 60866319.
+Nov 18 17:30:15 mylesdomain.com jenkins[214623]: Running with Java 11 from /usr/lib/jvm/java-11-amazon-corretto.x86_64, which is older than the minimum required version (Java 17).
+Nov 18 17:30:15 mylesdomain.com jenkins[214623]: Supported Java versions are: [17, 21]
+Nov 18 17:30:15 mylesdomain.com jenkins[214623]: See https://jenkins.io/redirect/java-support/ for more information.
+Nov 18 17:30:15 mylesdomain.com systemd[1]: jenkins.service: Main process exited, code=exited, status=1/FAILURE
+░░ Subject: Unit process exited
+░░ Defined-By: systemd
+░░ Support: https://lists.freedesktop.org/mailman/listinfo/systemd-devel
+░░ 
+░░ An ExecStart= process belonging to unit jenkins.service has exited.
+░░ 
+░░ The process' exit code is 'exited' and its exit status is 1.
+Nov 18 17:30:15 mylesdomain.com systemd[1]: jenkins.service: Failed with result 'exit-code'.
+░░ Subject: Unit failed
+░░ Defined-By: systemd
+░░ Support: https://lists.freedesktop.org/mailman/listinfo/systemd-devel
+░░ 
+░░ The unit jenkins.service has entered the 'failed' state with result 'exit-code'.
+Nov 18 17:30:15 mylesdomain.com systemd[1]: Failed to start jenkins.service - Jenkins Continuous Integration Server.
+░░ Subject: A start job for unit jenkins.service has failed
+░░ Defined-By: systemd
+░░ Support: https://lists.freedesktop.org/mailman/listinfo/systemd-devel
+░░ 
+░░ A start job for unit jenkins.service has finished with a failure.
+░░ 
+░░ The job identifier is 60866319 and the job result is failed.
+Nov 18 17:30:15 mylesdomain.com systemd[1]: jenkins.service: Scheduled restart job, restart counter is at 1.
+░░ Subject: Automatic restarting of a unit has been scheduled
+░░ Defined-By: systemd
+░░ Support: https://lists.freedesktop.org/mailman/listinfo/systemd-devel
+░░ 
+░░ Automatic restarting of the unit jenkins.service has been scheduled, as the result for
+░░ the configured Restart= setting for the unit.
+Nov 18 17:30:15 mylesdomain.com systemd[1]: Stopped jenkins.service - Jenkins Continuous Integration Server.
+░░ Subject: A stop job for unit jenkins.service has finished
+░░ Defined-By: systemd
+░░ Support: https://lists.freedesktop.org/mailman/listinfo/systemd-devel
+░░ 
+░░ A stop job for unit jenkins.service has finished.
+░░ 
+░░ The job identifier is 60866392 and the job result is done.
+Nov 18 17:30:16 mylesdomain.com systemd[1]: Starting jenkins.service - Jenkins Continuous Integration Server...
+░░ Subject: A start job for unit jenkins.service has begun execution
+░░ Defined-By: systemd
+░░ Support: https://lists.freedesktop.org/mailman/listinfo/systemd-devel
+░░ 
+░░ A start job for unit jenkins.service has begun execution.
+░░ 
+░░ The job identifier is 60866392.
+Nov 18 17:30:16 mylesdomain.com jenkins[214656]: Running with Java 11 from /usr/lib/jvm/java-11-amazon-corretto.x86_64, which is older than the minimum required version (Java 17).
+Nov 18 17:30:16 mylesdomain.com jenkins[214656]: Supported Java versions are: [17, 21]
+Nov 18 17:30:16 mylesdomain.com jenkins[214656]: See https://jenkins.io/redirect/java-support/ for more information.
+Nov 18 17:30:16 mylesdomain.com systemd[1]: jenkins.service: Main process exited, code=exited, status=1/FAILURE
+░░ Subject: Unit process exited
+░░ Defined-By: systemd
+░░ Support: https://lists.freedesktop.org/mailman/listinfo/systemd-devel
+░░ 
+░░ An ExecStart= process belonging to unit jenkins.service has exited.
+░░ 
+░░ The process' exit code is 'exited' and its exit status is 1.
+Nov 18 17:30:16 mylesdomain.com systemd[1]: jenkins.service: Failed with result 'exit-code'.
+░░ Subject: Unit failed
+░░ Defined-By: systemd
+░░ Support: https://lists.freedesktop.org/mailman/listinfo/systemd-devel
+░░ 
+░░ The unit jenkins.service has entered the 'failed' state with result 'exit-code'.
+Nov 18 17:30:16 mylesdomain.com systemd[1]: Failed to start jenkins.service - Jenkins Continuous Integration Server.
+░░ Subject: A start job for unit jenkins.service has failed
+░░ Defined-By: systemd
+░░ Support: https://lists.freedesktop.org/mailman/listinfo/systemd-devel
+░░ 
+░░ A start job for unit jenkins.service has finished with a failure.
+░░ 
+░░ The job identifier is 60866392 and the job result is failed.
+Nov 18 17:30:16 mylesdomain.com systemd[1]: jenkins.service: Scheduled restart job, restart counter is at 2.
+░░ Subject: Automatic restarting of a unit has been scheduled
+░░ Defined-By: systemd
+░░ Support: https://lists.freedesktop.org/mailman/listinfo/systemd-devel
+░░ 
+░░ Automatic restarting of the unit jenkins.service has been scheduled, as the result for
+░░ the configured Restart= setting for the unit.
+Nov 18 17:30:16 mylesdomain.com systemd[1]: Stopped jenkins.service - Jenkins Continuous Integration Server.
+░░ Subject: A stop job for unit jenkins.service has finished
+░░ Defined-By: systemd
+░░ Support: https://lists.freedesktop.org/mailman/listinfo/systemd-devel
+░░ 
+░░ A stop job for unit jenkins.service has finished.
+░░ 
+░░ The job identifier is 60866465 and the job result is done.
+Nov 18 17:30:17 mylesdomain.com systemd[1]: Starting jenkins.service - Jenkins Continuous Integration Server...
+░░ Subject: A start job for unit jenkins.service has begun execution
+░░ Defined-By: systemd
+░░ Support: https://lists.freedesktop.org/mailman/listinfo/systemd-devel
+░░ 
+░░ A start job for unit jenkins.service has begun execution.
+░░ 
+░░ The job identifier is 60866465.
+Nov 18 17:30:17 mylesdomain.com jenkins[214689]: Running with Java 11 from /usr/lib/jvm/java-11-amazon-corretto.x86_64, which is older than the minimum required version (Java 17).
+Nov 18 17:30:17 mylesdomain.com jenkins[214689]: Supported Java versions are: [17, 21]
+Nov 18 17:30:17 mylesdomain.com jenkins[214689]: See https://jenkins.io/redirect/java-support/ for more information.
+Nov 18 17:30:17 mylesdomain.com systemd[1]: jenkins.service: Main process exited, code=exited, status=1/FAILURE
+░░ Subject: Unit process exited
+░░ Defined-By: systemd
+░░ Support: https://lists.freedesktop.org/mailman/listinfo/systemd-devel
+░░ 
+░░ An ExecStart= process belonging to unit jenkins.service has exited.
+░░ 
+░░ The process' exit code is 'exited' and its exit status is 1.
+Nov 18 17:30:17 mylesdomain.com systemd[1]: jenkins.service: Failed with result 'exit-code'.
+░░ Subject: Unit failed
+░░ Defined-By: systemd
+░░ Support: https://lists.freedesktop.org/mailman/listinfo/systemd-devel
+░░ 
+░░ The unit jenkins.service has entered the 'failed' state with result 'exit-code'.
+Nov 18 17:30:17 mylesdomain.com systemd[1]: Failed to start jenkins.service - Jenkins Continuous Integration Server.
+░░ Subject: A start job for unit jenkins.service has failed
+░░ Defined-By: systemd
+░░ Support: https://lists.freedesktop.org/mailman/listinfo/systemd-devel
+░░ 
+░░ A start job for unit jenkins.service has finished with a failure.
+░░ 
+░░ The job identifier is 60866465 and the job result is failed.
+Nov 18 17:30:17 mylesdomain.com systemd[1]: jenkins.service: Scheduled restart job, restart counter is at 3.
+░░ Subject: Automatic restarting of a unit has been scheduled
+░░ Defined-By: systemd
+░░ Support: https://lists.freedesktop.org/mailman/listinfo/systemd-devel
+░░ 
+░░ Automatic restarting of the unit jenkins.service has been scheduled, as the result for
+░░ the configured Restart= setting for the unit.
+Nov 18 17:30:17 mylesdomain.com systemd[1]: Stopped jenkins.service - Jenkins Continuous Integration Server.
+░░ Subject: A stop job for unit jenkins.service has finished
+░░ Defined-By: systemd
+░░ Support: https://lists.freedesktop.org/mailman/listinfo/systemd-devel
+░░ 
+░░ A stop job for unit jenkins.service has finished.
+░░ 
+░░ The job identifier is 60866538 and the job result is done.
+Nov 18 17:30:18 mylesdomain.com systemd[1]: Starting jenkins.service - Jenkins Continuous Integration Server...
+░░ Subject: A start job for unit jenkins.service has begun execution
+░░ Defined-By: systemd
+░░ Support: https://lists.freedesktop.org/mailman/listinfo/systemd-devel
+░░ 
+░░ A start job for unit jenkins.service has begun execution.
+░░ 
+░░ The job identifier is 60866538.
+Nov 18 17:30:18 mylesdomain.com jenkins[214736]: Running with Java 11 from /usr/lib/jvm/java-11-amazon-corretto.x86_64, which is older than the minimum required version (Java 17).
+Nov 18 17:30:18 mylesdomain.com jenkins[214736]: Supported Java versions are: [17, 21]
+Nov 18 17:30:18 mylesdomain.com jenkins[214736]: See https://jenkins.io/redirect/java-support/ for more information.
+Nov 18 17:30:18 mylesdomain.com systemd[1]: jenkins.service: Main process exited, code=exited, status=1/FAILURE
+░░ Subject: Unit process exited
+░░ Defined-By: systemd
+░░ Support: https://lists.freedesktop.org/mailman/listinfo/systemd-devel
+░░ 
+░░ An ExecStart= process belonging to unit jenkins.service has exited.
+░░ 
+░░ The process' exit code is 'exited' and its exit status is 1.
+Nov 18 17:30:18 mylesdomain.com systemd[1]: jenkins.service: Failed with result 'exit-code'.
+░░ Subject: Unit failed
+░░ Defined-By: systemd
+░░ Support: https://lists.freedesktop.org/mailman/listinfo/systemd-devel
+░░ 
+░░ The unit jenkins.service has entered the 'failed' state with result 'exit-code'.
+Nov 18 17:30:18 mylesdomain.com systemd[1]: Failed to start jenkins.service - Jenkins Continuous Integration Server.
+░░ Subject: A start job for unit jenkins.service has failed
+░░ Defined-By: systemd
+░░ Support: https://lists.freedesktop.org/mailman/listinfo/systemd-devel
+░░ 
+░░ A start job for unit jenkins.service has finished with a failure.
+░░ 
+░░ The job identifier is 60866538 and the job result is failed.
+Nov 18 17:30:18 mylesdomain.com systemd[1]: jenkins.service: Scheduled restart job, restart counter is at 4.
+░░ Subject: Automatic restarting of a unit has been scheduled
+░░ Defined-By: systemd
+░░ Support: https://lists.freedesktop.org/mailman/listinfo/systemd-devel
+░░ 
+░░ Automatic restarting of the unit jenkins.service has been scheduled, as the result for
+░░ the configured Restart= setting for the unit.
+Nov 18 17:30:18 mylesdomain.com systemd[1]: Stopped jenkins.service - Jenkins Continuous Integration Server.
+░░ Subject: A stop job for unit jenkins.service has finished
+░░ Defined-By: systemd
+░░ Support: https://lists.freedesktop.org/mailman/listinfo/systemd-devel
+░░ 
+░░ A stop job for unit jenkins.service has finished.
+░░ 
+░░ The job identifier is 60866611 and the job result is done.
+Nov 18 17:30:19 mylesdomain.com systemd[1]: Starting jenkins.service - Jenkins Continuous Integration Server...
+░░ Subject: A start job for unit jenkins.service has begun execution
+░░ Defined-By: systemd
+░░ Support: https://lists.freedesktop.org/mailman/listinfo/systemd-devel
+░░ 
+░░ A start job for unit jenkins.service has begun execution.
+░░ 
+░░ The job identifier is 60866611.
+Nov 18 17:30:19 mylesdomain.com jenkins[214769]: Running with Java 11 from /usr/lib/jvm/java-11-amazon-corretto.x86_64, which is older than the minimum required version (Java 17).
+Nov 18 17:30:19 mylesdomain.com jenkins[214769]: Supported Java versions are: [17, 21]
+Nov 18 17:30:19 mylesdomain.com jenkins[214769]: See https://jenkins.io/redirect/java-support/ for more information.
+Nov 18 17:30:19 mylesdomain.com systemd[1]: jenkins.service: Main process exited, code=exited, status=1/FAILURE
+░░ Subject: Unit process exited
+░░ Defined-By: systemd
+░░ Support: https://lists.freedesktop.org/mailman/listinfo/systemd-devel
+░░ 
+░░ An ExecStart= process belonging to unit jenkins.service has exited.
+░░ 
+░░ The process' exit code is 'exited' and its exit status is 1.
+Nov 18 17:30:19 mylesdomain.com systemd[1]: jenkins.service: Failed with result 'exit-code'.
+░░ Subject: Unit failed
+░░ Defined-By: systemd
+░░ Support: https://lists.freedesktop.org/mailman/listinfo/systemd-devel
+░░ 
+░░ The unit jenkins.service has entered the 'failed' state with result 'exit-code'.
+Nov 18 17:30:19 mylesdomain.com systemd[1]: Failed to start jenkins.service - Jenkins Continuous Integration Server.
+░░ Subject: A start job for unit jenkins.service has failed
+░░ Defined-By: systemd
+░░ Support: https://lists.freedesktop.org/mailman/listinfo/systemd-devel
+░░ 
+░░ A start job for unit jenkins.service has finished with a failure.
+░░ 
+░░ The job identifier is 60866611 and the job result is failed.
+Nov 18 17:30:19 mylesdomain.com systemd[1]: jenkins.service: Scheduled restart job, restart counter is at 5.
+░░ Subject: Automatic restarting of a unit has been scheduled
+░░ Defined-By: systemd
+░░ Support: https://lists.freedesktop.org/mailman/listinfo/systemd-devel
+░░ 
+░░ Automatic restarting of the unit jenkins.service has been scheduled, as the result for
+░░ the configured Restart= setting for the unit.
+Nov 18 17:30:19 mylesdomain.com systemd[1]: Stopped jenkins.service - Jenkins Continuous Integration Server.
+░░ Subject: A stop job for unit jenkins.service has finished
+░░ Defined-By: systemd
+░░ Support: https://lists.freedesktop.org/mailman/listinfo/systemd-devel
+░░ 
+░░ A stop job for unit jenkins.service has finished.
+░░ 
+░░ The job identifier is 60866684 and the job result is done.
+Nov 18 17:30:19 mylesdomain.com systemd[1]: jenkins.service: Start request repeated too quickly.
+Nov 18 17:30:19 mylesdomain.com systemd[1]: jenkins.service: Failed with result 'exit-code'.
+░░ Subject: Unit failed
+░░ Defined-By: systemd
+░░ Support: https://lists.freedesktop.org/mailman/listinfo/systemd-devel
+░░ 
+░░ The unit jenkins.service has entered the 'failed' state with result 'exit-code'.
+Nov 18 17:30:20 mylesdomain.com systemd[1]: Failed to start jenkins.service - Jenkins Continuous Integration Server.
+░░ Subject: A start job for unit jenkins.service has failed
+░░ Defined-By: systemd
+░░ Support: https://lists.freedesktop.org/mailman/listinfo/systemd-devel
+░░ 
+░░ A start job for unit jenkins.service has finished with a failure.
+░░ 
+░░ The job identifier is 60866684 and the job result is failed.
